@@ -14,7 +14,6 @@
       <div class="row">
         <div class="col-md-4 mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="https://placehold.it/300x200" alt="">
             <div class="card-body">
               <h4 class="card-title">Réseaux et Sécurité
                 INF 241</h4>
@@ -36,7 +35,6 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="https://placehold.it/300x200" alt="">
             <div class="card-body">
               <h4 class="card-title">Programmation
                 INF 242</h4>
@@ -60,7 +58,6 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="https://placehold.it/300x200" alt="">
             <div class="card-body">
               <h4 class="card-title">Informatique INF 243</h4>
               <p class="card-text">

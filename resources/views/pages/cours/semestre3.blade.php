@@ -13,7 +13,6 @@
   <div class="row">
     <div class="col-md-4 mb-5">
       <div class="card h-100">
-        <img class="card-img-top" src="https://placehold.it/300x200" alt="">
         <div class="card-body">
           <h5 class="card-title">
             UE: Mathématiques INF 231
@@ -37,7 +36,6 @@
     </div>
     <div class="col-md-4 mb-5">
       <div class="card h-100">
-        <img class="card-img-top" src="https://placehold.it/300x200" alt="">
         <div class="card-body">
           <h5 class="card-title">
               UE: Réseaux et Systèmes
@@ -107,7 +105,6 @@
 
     <div class="col-md-4 mb-5">
       <div class="card h-100">
-        <img class="card-img-top" src="https://placehold.it/300x200" alt="">
         <div class="card-body">
           <h4 class="card-title">Informatique
             INF 233</h4>

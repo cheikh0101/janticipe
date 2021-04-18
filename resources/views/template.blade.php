@@ -53,7 +53,7 @@
             <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Forum</a>
+            <a class="nav-link" href="https://samaforum.herokuapp.com/">Forum</a>
           </li>
         </ul>
       </div>
