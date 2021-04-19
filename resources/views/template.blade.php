@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Plateforme pour mieux appréhender l'année universitaire">
   <meta name="author" content="">
 
   <title>J'Anticipe</title>
@@ -93,6 +93,7 @@
     @include('pages.suggestions')
 
     @include('pages.faq')
+
   </div>
   <!-- /.container -->
 
