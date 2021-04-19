@@ -93,7 +93,6 @@
     @include('pages.suggestions')
 
     @include('pages.faq')
-
   </div>
   <!-- /.container -->
 

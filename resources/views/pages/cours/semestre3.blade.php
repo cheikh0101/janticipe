@@ -47,19 +47,19 @@
                              <h5>Probabilités et Statistiques</h5>
                              <ol>
                                  <li>
-                                     <a href="img/reseau-1.pdf">Module 1</a>
+                                     <a href="img/maths/module1M1_INFO.pdf">Module 1</a>
                                  </li>
                                  <li>
-                                     <a href="img/reseau-2.pdf">Module 2</a>
+                                     <a href="img/maths/module2M1_info.pdf">Module 2</a>
                                  </li>
                                  <li>
-                                     <a href="img/reseau-3.pdf">Module 3</a>
+                                     <a href="img/maths/module3M1_info.pdf">Module 3</a>
                                  </li>
                                  <li>
-                                    <a href="img/reseau-3.pdf">Module 4</a>
+                                    <a href="img/maths/module4M1_info.pdf">Module 4</a>
                                 </li>
                                 <li>
-                                    <a href="img/reseau-3.pdf">Module 5</a>
+                                    <a href="img/maths/module5M1_info.pdf">Module 5</a>
                                 </li>
                              </ol>
 
