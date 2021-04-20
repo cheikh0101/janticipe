@@ -39,7 +39,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="https://samaforum.herokuapp.com/">Forum</a>
+            <a class="nav-link" href="http://samaforum.herokuapp.com/">Forum</a>
           </li>
         </ul>
       </div>

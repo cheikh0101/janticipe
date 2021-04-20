@@ -20,10 +20,8 @@
             <br>
             Le <b>forum</b> aussi là pour vous appuyez . Posez vos questions et on vous aurez des solutions.
             <br>
-            Si malgré tout ça le problème persiste prenez rv avec un ainé en cliquant  <a href="rendez-vous">ici</a>.
+            Si malgré tout ça le problème persiste prenez rv avec un ainé en <a href="rendez-vous"> cliquant  ici</a>.
           </details>
-
-
 
         </div>
       </div>

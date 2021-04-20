@@ -40,3 +40,12 @@ Route::post('/rendez-vous', function (Request $request) {
         return view('rv');
     }
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('forum', 'App\Http\Controllers\ForumController');
+
+
+Route::resource('ForumStatistique', 'App\Http\Controllers\StatistiqueController');
