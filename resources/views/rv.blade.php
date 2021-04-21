@@ -51,12 +51,13 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2">J'Anticipe</h1>
+          <h1 class="display-4 text-white mt-5 mb-2">Rendez-Vous</h1>
           <p class="lead mb-5 text-white-50">
-            C'est bien beau pour ne pas dire normal les films ,les séries, les jeux vidéos pendant les vacances.
-            En tant que ainé(e) on ne vous conseillera pas uniquement cela vu les enjeux et les nombreux défits à relever.
+            Vous avez des problèmes dans le cadre pédagogique et vous peinez à trouver une solution meme dans le <a href="" style="color: black">FORUM</a>
+            mis en place et vous pensez que prendre rendez-vous avec un ainè pour lui faire part de votre problème est l'unique solution alors
+            bienvenue .
             <br>
-            <i>Joukk tcha bamouy tell</i>
+            Remplis le formulaire et veuillez rester à l'écoute.
           </p>
         </div>
       </div>

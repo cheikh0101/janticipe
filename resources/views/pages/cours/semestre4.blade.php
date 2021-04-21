@@ -216,10 +216,10 @@
                              <h5>DEV WEB 2</h5>
                              <ul>
                                  <li>
-                                     <a href="img/devweb2/.pdf">..</a>
+                                     <a href="img/devweb2/1.pdf">Cours 1</a>
                                  </li>
                                  <li>
-                                    <a href="img/devweb2/.pdf">..</a>
+                                    <a href="img/devweb2/2.pdf">Cours 2</a>
                                 </li>
                              </ul>
 

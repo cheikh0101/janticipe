@@ -15,8 +15,7 @@
       <div class="card h-100">
         <div class="card-body">
           <h4 class="card-title">Réseaux et Sécurité</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-            neque sequi doloribus.</p>
+          <p class="card-text">“Un idéal n’a aucune valeur si vous ne pouvez pas le mettre en pratique.”.</p>
         </div>
         <div class="card-footer">
           <a href="#" class="btn btn-primary">S'exercer!</a>
@@ -27,8 +26,7 @@
       <div class="card h-100">
         <div class="card-body">
           <h4 class="card-title">Programmation</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-            neque sequi doloribus totam ut praesentium aut.</p>
+          <p class="card-text">“La réalisation réside dans la pratique.”.</p>
         </div>
         <div class="card-footer">
           <a href="#" class="btn btn-primary">S'exercer!</a>
@@ -39,8 +37,7 @@
       <div class="card h-100">
         <div class="card-body">
           <h4 class="card-title">Informatique</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-            neque.</p>
+          <p class="card-text">La théorie, c'est quand on sait tout et que rien ne fonctionne. La pratique, c'est quand tout fonctionne et que personne ne sait pourquoi. Ici, nous avons réuni théorie et pratique : Rien ne fonctionne... et personne ne sait pourquoi !</p>
         </div>
         <div class="card-footer">
           <a href="#" class="btn btn-primary">S'exercer!</a>

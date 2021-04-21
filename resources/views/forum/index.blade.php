@@ -62,46 +62,47 @@
 
 <div class="container p-0 mt-5">
 
-    <a href="#" class="btn btn-primary float-right mt-n1"><i class="fas fa-plus"></i> Nouveau Sujet</a>
+    <a href="forum/create" class="btn btn-primary float-right mt-n1"><i class="fas fa-plus"></i> Nouveau Sujet</a>
     <h1 class="h3 mb-3"> &hearts; Dalal akk Jaam &hearts; </h1>
 
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
+        @foreach ($topic as $item)
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
 
-                <div class="card-header px-4 pt-4">
-                    <div class="card-actions float-right">
-                       ...
-                    </div>
-                    <h5 class="card-title mb-0">Category</h5>
-                    <div class="badge bg-success my-2">xxx</div>
-                </div>
-                <div class="card-body px-4 pt-2">
-                    <h4>
-                        <u>
-                            Le titre
-                        </u>
-                    </h4>
-                    <p>Le content.</p>
-
-                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="rounded-circle mr-1"
-                        alt="Avatar" width="28" height="28">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="rounded-circle mr-1"
-                        alt="Avatar" width="28" height="28">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1"
-                        alt="Avatar" width="28" height="28">
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-4 pb-4">
-                        <p class="mb-2 font-weight-bold">Posté par: <span class="float-right">xxx</span></p>
-                        <div class="progress progress-lg">
-                            Le
+                    <div class="card-header px-4 pt-4">
+                        <div class="card-actions float-right">
+                        ...
                         </div>
-                    </li>
-                </ul>
+                        <h5 class="card-title mb-0">Category</h5>
+                        <div class="badge bg-success my-2">{{$item->category}}</div>
+                    </div>
+                    <div class="card-body px-4 pt-2">
+                        <h4>
+                            <u>
+                                {{$item->title}}
+                            </u>
+                        </h4>
+                        <p>
+                            @if (strlen($item->content) >= 100)
+                                {{--strlen($item->content) == 100--}}
+                            @endif
+                            {{ $item->content }}
+                        </p>
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1"
+                            alt="Avatar" width="28" height="28">
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-4 pb-4">
+                            <p class="mb-2 font-weight-bold">Posté par: <span class="float-right">xxx</span></p>
+                            <div class="progress progress-lg">
+                                Le : &nbsp;&nbsp;&nbsp;{{$item->created_at->format('d/m/y  à h:m')}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
+        @endforeach
     </div>
 
 </div>

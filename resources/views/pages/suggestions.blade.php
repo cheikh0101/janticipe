@@ -281,12 +281,12 @@
             </div>
             <div class="card-footer">
               <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bdd">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#suggestionbdd">
                 Voir!
             </button>
 
              <!-- Modal -->
-             <div class="modal fade " id="bdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal fade " id="suggestionbdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                  <div class="modal-dialog">
                      <div class="modal-content">
                          <div class="modal-header">

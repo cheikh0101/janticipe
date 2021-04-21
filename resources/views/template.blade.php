@@ -53,6 +53,9 @@
             <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="rendez-vous">RV</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="http://samaforum.herokuapp.com/">Forum</a>
           </li>
         </ul>

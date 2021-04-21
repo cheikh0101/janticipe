@@ -170,7 +170,7 @@
               </p>
         </div>
         <div class="card-footer">
-          <!-- Button trigger modal -->
+        <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#algo3">
             Découvrir Plus!
          </button>
@@ -200,6 +200,14 @@
                             </li>
                          </ol>
 
+                         <hr>
+                         <h5>Développement Web 1</h5>
+                         <ul>
+                             <li>
+                                 <a href="img/devweb1/HTML_UT.pdf">Cours</a>
+                             </li>
+                         </ul>
+
                      </div>
                      <div class="modal-footer">
                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
@@ -218,8 +226,6 @@
 
 
   <div class="row">
-    <div class="col-md-4 mb-5">
-
     </div>
     <div class="col-md-4 mb-5">
       <div class="card h-100">
@@ -240,10 +246,64 @@
               </p>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary">Découvrir plus!</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bdd">
+            Découvrir Plus!
+         </button>
+
+         <!-- Modal -->
+         <div class="modal fade " id="bdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Cours  S3</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                     </div>
+                     <div class="modal-body">
+                         <h5>BDD</h5>
+                         <ul>
+                             <li>
+                                 <a href="img/bdd/cours_diop.pdf">Cours </a>
+                             </li>
+                         </ul>
+
+                         <hr>
+                         <h5>ACSI</h5>
+                         <ol>
+                             <li>
+                                <a href="img/acsi/s1.pdf">Cours 1</a>
+                             </li>
+
+                             <li>
+                                <a href="img/acsi/s2.pdf">Cours 2</a>
+                             </li>
+
+                             <li>
+                                <a href="img/acsi/s3.pdf">Cours 3</a>
+                             </li>
+
+                             <li>
+                                <a href="img/acsi/s45.pdf">Cours 4--5</a>
+                             </li>
+
+                             <li>
+                                <a href="img/acsi/s6.pdf">Cours 6</a>
+                             </li>
+                         </ol>
+
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!--fin modal-->
+
         </div>
       </div>
     </div>
+    <div class="col-md-4 mb-5">
     <div class="col-md-4 mb-5">
 
     </div>

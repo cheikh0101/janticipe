@@ -14,7 +14,8 @@ class ForumController extends Controller
      */
     public function index()
     {
-        return view('forum.index');
+        $topic = Forum::all();
+        return view('forum.index', compact('topic'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ForumController extends Controller
      */
     public function create()
     {
-        //
+        return view('forum.create');
     }
 
     /**

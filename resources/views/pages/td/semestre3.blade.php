@@ -40,8 +40,7 @@
           <div class="card h-100">
             <div class="card-body">
               <h4 class="card-title">Informatique + SI</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-                neque.</p>
+              <p class="card-text">“Le savoir n’est pas difficile, seule sa mise en pratique l’est.”.</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">S'exercer</a>
