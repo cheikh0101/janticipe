@@ -18,7 +18,53 @@
           <p class="card-text">“Un idéal n’a aucune valeur si vous ne pouvez pas le mettre en pratique.”.</p>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary">S'exercer!</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tdreseauxetsecurite">
+              S'exercer
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade bg-dark" id="tdreseauxetsecurite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">TD--TP  S4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                        </div>
+                        <div class="modal-body bg-dark" style="color: white">
+                            <h5>Réseaux</h5>
+                            <ol >
+                            </ol>
+
+                            <hr>
+                            <h5>Sécurité</h5>
+                            <ul>
+                                <li>
+                                    <a href="img/securite/td/TD1et2.docx">TD1 et 2</a>
+                                </li>
+
+                                <li>
+                                    <a href="img/securite/td/TD1-Chiffrement.docx">TP1 </a>
+                                </li>
+
+                                <li>
+                                    <a href="img/securite/td/TP2.docx">TP 2</a>
+                                </li>
+
+                                <li>
+                                    <a href="img/securite/td/TP3.docx">TP 3</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin modal-->
+
         </div>
       </div>
     </div>
