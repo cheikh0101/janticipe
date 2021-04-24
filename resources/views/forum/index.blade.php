@@ -62,17 +62,23 @@
 
 <div class="container p-0 mt-5">
 
-    <a href="forum/create" class="btn btn-primary float-right mt-n1"><i class="fas fa-plus"></i> Nouveau Sujet</a>
+    <a href="{{route('forum.create')}}" class="btn btn-primary float-right mt-n1"><i class="fas fa-plus"></i> Nouveau Sujet</a>
+
     <h1 class="h3 mb-3"> &hearts; Dalal akk Jaam &hearts; </h1>
 
     <div class="row">
-        @foreach ($topic as $item)
+        <div class="col">
+            <button type="button" class="btn btn-primary btn-block mb-4">Afficher par Catégories</button>
+        </div>
+    </div>
+    <div class="row">
+        @foreach ($topics as $item)
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card">
 
                     <div class="card-header px-4 pt-4">
                         <div class="card-actions float-right">
-                        ...
+                        #{{$item->id}}
                         </div>
                         <h5 class="card-title mb-0">Category</h5>
                         <div class="badge bg-success my-2">{{$item->category}}</div>
@@ -80,7 +86,7 @@
                     <div class="card-body px-4 pt-2">
                         <h4>
                             <u>
-                                {{$item->title}}
+                                <a href=" {{route('forum.show',$item)}} "> {{$item->title}} </a>
                             </u>
                         </h4>
                         <p>
@@ -89,12 +95,19 @@
                             @endif
                             {{ $item->content }}
                         </p>
+                        @if ($item->user->genre == 'masculin')
                         <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1"
-                            alt="Avatar" width="28" height="28">
+                        alt="homme" width="28" height="28">
+                        @else
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1"
+                        alt="femme" width="28" height="28">
+
+                        @endif
+
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item px-4 pb-4">
-                            <p class="mb-2 font-weight-bold">Posté par: <span class="float-right">xxx</span></p>
+                            <p class="mb-2 font-weight-bold">Posté par: <span class="float-right">{{$item->user->name}}</span></p>
                             <div class="progress progress-lg">
                                 Le : &nbsp;&nbsp;&nbsp;{{$item->created_at->format('d/m/y  à h:m')}}
                             </div>

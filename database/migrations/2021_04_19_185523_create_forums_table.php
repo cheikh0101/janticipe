@@ -19,7 +19,6 @@ class CreateForumsTable extends Migration
             $table->longText('content');
             $table->string('category');
             $table->string('image')->nullable();
-            $table->string('genre');
             $table->integer('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')
                 ->onUpdate('cascade');

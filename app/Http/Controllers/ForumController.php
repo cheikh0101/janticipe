@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ForumController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +19,8 @@ class ForumController extends Controller
      */
     public function index()
     {
-        $topic = Forum::all();
-        return view('forum.index', compact('topic'));
+        $topics = Forum::latest()->paginate(10);
+        return view('forum.index', compact('topics'));
     }
 
     /**
@@ -36,7 +41,14 @@ class ForumController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $topic = auth()->user()->forums()->create([
+            'title' => request('title'),
+            'content' => request('content'),
+            'category' => request('category'),
+        ]);
+
+        return redirect()->route('forum.show', $topic->id);
     }
 
     /**
@@ -45,9 +57,16 @@ class ForumController extends Controller
      * @param  \App\Models\Forum  $forum
      * @return \Illuminate\Http\Response
      */
+
     public function show(Forum $forum)
     {
-        //
+        if ($forum->user->genre === "masculin") {
+            $image = "xxx";
+        } else {
+            $image = "femme";
+        }
+        static $i;
+        return view('forum.show', compact('forum', 'image'));
     }
 
     /**
@@ -58,7 +77,7 @@ class ForumController extends Controller
      */
     public function edit(Forum $forum)
     {
-        //
+        return view('forum.edit', compact('forum'));
     }
 
     /**
@@ -70,7 +89,16 @@ class ForumController extends Controller
      */
     public function update(Request $request, Forum $forum)
     {
-        //
+
+        $data = $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'category' => 'required'
+        ]);
+
+        $forum->update($data);
+
+        return redirect()->route('forum.show', compact('forum'));
     }
 
     /**
@@ -81,6 +109,8 @@ class ForumController extends Controller
      */
     public function destroy(Forum $forum)
     {
-        //
+        Forum::destroy($forum->id);
+
+        return redirect('/forum');
     }
 }

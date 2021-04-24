@@ -221,8 +221,8 @@
                         <div class="pull-left m-r-md">
                             <i class="fa fa-globe text-navy mid-icon"></i>
                         </div>
-                        <h2>Welcome to our forum</h2>
-                        <span>Feel free to choose topic you're interested in.</span>
+                        <h2>Bienvenue dans les statistiques du forum</h2>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -230,18 +230,15 @@
     </div>
 </div>
 
-
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-12">
             <div class="wrapper wrapper-content animated fadeInRight">
 
                 <div class="ibox-content m-b-sm border-bottom">
+
                     <div class="forum-title">
-                        <div class="pull-right forum-desc">
-                            <samll>Total posts: 320,800</samll>
-                        </div>
-                        <h3>General subjects</h3>
+                        <h3>Statistique Général</h3>
                     </div>
 
                     <div class="forum-item">
@@ -250,36 +247,127 @@
                                 <div class="forum-icon">
                                     <i class="fa fa-bolt"></i>
                                 </div>
-                                <a href="forum_post.html" class="forum-item-title">Introductions</a>
-                                <div class="forum-sub-title">New to the community? Please stop by, say hi and tell
-                                    us a bit about yourself. </div>
+                                <a href="forum_post.html" class="forum-item-title">Total Sujet</a>
+                                <div class="forum-sub-title">Ceci est le nombre total de sujets de discussion</div>
                             </div>
                             <div class="col-md-1 forum-info">
                                 <span class="views-number">
-                                    890
+                                    000
                                 </span>
                                 <div>
-                                    <small>Views</small>
+                                    <small>Sujets</small>
                                 </div>
                             </div>
-                            <div class="col-md-1 forum-info">
-                                <span class="views-number">
-                                    120
-                                </span>
-                                <div>
-                                    <small>Topics</small>
-                                </div>
-                            </div>
-                            <div class="col-md-1 forum-info">
-                                <span class="views-number">
-                                    154
-                                </span>
-                                <div>
-                                    <small>Posts</small>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
+
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Total Commentaire</a>
+                                <div class="forum-sub-title">Ceci est le nombre total de commentaires de discussion</div>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <span class="views-number">
+                                    000
+                                </span>
+                                <div>
+                                    <small>Commentaires</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Post des Hommes</a>
+                                <div class="forum-sub-title">Ceci est le nombre total des posts de sujet de discussion des hommes</div>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <span class="views-number">
+                                    000
+                                </span>
+                                <div>
+                                    <small>Post Hommes</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Post des Femmes</a>
+                                <div class="forum-sub-title">Ceci est le nombre total des posts de sujet de discussion des femmes</div>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <span class="views-number">
+                                    000
+                                </span>
+                                <div>
+                                    <small>Post Femmes</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Nombre de post de AUTEUR</a>
+                                <div class="forum-sub-title">Voila l'ensemble des sujets de discussion dont vous etes l'auteur.</div>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <span class="views-number">
+                                    000
+                                </span>
+                                <div>
+                                    <small>Nbre Post</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Nombre de commentaires de AUTEUR</a>
+                                <div class="forum-sub-title">Voila l'ensemble des commentaires dont vous etes l'auteur.</div>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <span class="views-number">
+                                    000
+                                </span>
+                                <div>
+                                    <small>Nbre Commentaire</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

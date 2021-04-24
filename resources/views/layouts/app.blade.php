@@ -60,13 +60,24 @@
                                 </li>
                             @endif
                         @else
+                                <li class="nav-item ">
+                                    <a id="" class="nav-link " href=" {{route('forum.index')}} ">
+                                        Acceuil
+                                    </a>
+                                </li>
+
                             <li class="nav-item dropdown">
+
+
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a href="" class="dropdown-item">
+                                    <a href=" {{route('forum.create')}} " class="dropdown-item">
+                                        Créer un sujet
+                                    </a>
+                                    <a href="{{route('ForumStatistique.index')}}" class="dropdown-item">
                                         Statistiques
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -90,14 +101,6 @@
             @yield('content')
         </main>
     </div>
-
-    <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; LGI2 -- </p>
-    </div>
-    <!-- /.container -->
-  </footer>
 
 </body>
 </html>

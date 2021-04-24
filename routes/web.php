@@ -17,14 +17,31 @@ use App\Models\RendezVous;
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('index');
 });
+
+Route::get('/lgi1', function () {
+    return view('indexlgi1');
+});
+
+Route::get('/lgi2', function () {
+    return view('indexlgi2');
+});
+Route::get('/lgi3', function () {
+    return view('indexlgi3');
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('forum', 'App\Http\Controllers\ForumController');
+
+Route::resource('ForumStatistique', 'App\Http\Controllers\StatistiqueController');
+
+Route::resource('rv', 'App\Http\Controllers\RendezVousController');
 
 Route::get('/rendez-vous', function () {
     return view('rv');
 });
-
-Route::resource('rv', 'App\Http\Controllers\RendezVousController');
 
 Route::post('/rendez-vous', function (Request $request) {
     $request->validate(
@@ -42,10 +59,3 @@ Route::post('/rendez-vous', function (Request $request) {
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::resource('forum', 'App\Http\Controllers\ForumController');
-
-
-Route::resource('ForumStatistique', 'App\Http\Controllers\StatistiqueController');

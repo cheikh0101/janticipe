@@ -22,7 +22,7 @@
             <strong>
               Licence Informatique 2 de l'UIDT
               <br>
-              Promotion : 2018-2021
+              Promotion : 2018-2019
             </strong>
             <br>
           </address>

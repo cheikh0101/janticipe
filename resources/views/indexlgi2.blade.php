@@ -25,7 +25,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">J'Anticipe</a>
+      <a class="navbar-brand" href="/">J'Anticipe</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,27 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#apropos">A Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cours">Cours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#td">TD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#suggestions">Suggestions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rendez-vous">RV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://samaforum.herokuapp.com/">Forum</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -63,7 +83,19 @@
   <!-- Page Content -->
   <div class="container">
 
-    @include('pages.apropos')
+    @include('pages_li2.apropos')
+
+    @include('pages_li2.cours.semestre3')
+
+    @include('pages_li2.cours.semestre4')
+
+    @include('pages_li2.td.semestre3')
+
+    @include('pages_li2.td.semestre4')
+
+    @include('pages_li2.suggestions')
+
+    @include('pages_li2.faq')
 
   </div>
   <!-- /.container -->
@@ -71,7 +103,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; LGI2 -- </p>
+      <p class="m-0 text-center text-white">Copyright &copy; LI -- Promo 2018-2019</p>
     </div>
     <!-- /.container -->
   </footer>
