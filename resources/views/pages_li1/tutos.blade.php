@@ -10,7 +10,7 @@
                 </summary>
 
                 <div class="embed-responsive">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/D5Cm8nuEimA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/D5Cm8nuEimA" title="YouTube video player"></iframe>
                 </div>
             </details>
         </div>
