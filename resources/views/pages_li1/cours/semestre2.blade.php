@@ -52,9 +52,64 @@
                 </li>
             </ul>
             </p>
-            <a href="#" class="icon-link">
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique2">
                 Découvrir!!
             </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="coursInformatique2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Cours et Suggestions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>
+                                Cours
+                            </h5>
+                            <hr>
+                            <ul>
+                                <li>
+                                    Algorithmique et programmation 2
+                                    <ul>
+                                        <li>
+                                            <a href="img/l1/algo2/cours_algo_2_tout.pdf">Cours Complet</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Architecture des ordinateurs
+                                    <ul>
+                                        <li>
+                                            <a href="img/l1/archi/chap1.docx">Chapitre 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/archi/chap4.docx">Chapitre 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/archi/chap5.docx">Chapitre 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h5>Suggestions</h5>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <a href="img/l1/suggestions/openclassroom.pdf">
+                                        Apprendre à programmer en C
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin modal-->
         </div>
 
     </div>

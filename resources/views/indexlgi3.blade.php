@@ -139,12 +139,15 @@
   <!-- Page Content -->
   <div class="container">
 
-    @include('pages_li3.apropos')
+    <div id="apropos">
+        @include('pages_li3.apropos')
+    </div>
 
-    @include('pages_li3.cours.semestre5')
+    <div id="cours">
+        @include('pages_li3.cours.semestre5')
 
-    @include('pages_li3.cours.semestre6')
-
+        @include('pages_li3.cours.semestre6')
+    </div>
   </div>
   <!-- /.container -->
 

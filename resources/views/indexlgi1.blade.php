@@ -115,7 +115,7 @@
             <a class="nav-link" href="#suggestions">Suggestions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#faq">FAQ</a>
+            <a class="nav-link" href="#tutos">Tutos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="rendez-vous">RV</a>
@@ -148,19 +148,36 @@
   <!-- Page Content -->
   <div class="container">
 
-    @include('pages_li1.apropos')
+    <div id="apropos">
+        @include('pages_li1.apropos')
+    </div>
 
-    @include('pages_li1.cours.semestre1')
+    <div id="cours">
 
-    @include('pages_li1.cours.semestre2')
+        @include('pages_li1.cours.semestre1')
 
-    @include('pages_li1.td.semestre1')
+        @include('pages_li1.cours.semestre2')
 
-    @include('pages_li1.td.semestre2')
+    </div>
 
-    @include('pages_li1.suggestions')
+    <div id="td">
 
-    @include('pages_li1.faq')
+        @include('pages_li1.td.semestre1')
+
+        @include('pages_li1.td.semestre2')
+
+    </div>
+
+    <div id="suggestions">
+
+        @include('pages_li1.suggestions')
+
+    </div>
+
+    <div id="tutos">
+
+        @include('pages_li1.tutos')
+    </div>
 
   </div>
   <!-- /.container -->
