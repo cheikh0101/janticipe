@@ -98,7 +98,7 @@
                                  </li>
 
                                  <li>
-                                    <a href="">Projet de gestion des patients</a>
+                                    <a href="img/suggestions/Evaluation4_PHP_LIAGE2_MDIOUF....pdf">Projet de gestion des patients</a>
                                 </li>
 
                                 <li>
@@ -276,8 +276,7 @@
           <div class="card h-100">
             <div class="card-body">
               <h4 class="card-title">Introduction aux bases de données</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-                neque.</p>
+              <p class="card-text">Une base de données (que nous nommerons BDD par commodité) est une collection d'informations organisées afin d'être facilement consultables, gérables et mises à jour.</p>
             </div>
             <div class="card-footer">
               <!-- Button trigger modal -->

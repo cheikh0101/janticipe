@@ -6,7 +6,7 @@
 
         <div class="feature col-md-4">
         <h2>Algorithme et Programmation 1</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
           Découvrir!!
             <i class="fas fa-directions"></i>
@@ -15,7 +15,7 @@
 
       <div class="feature col-md-4">
         <h2>Algorithme et Programmation 2</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
           Découvrir!!
           <i class="fas fa-directions"></i>
@@ -24,7 +24,7 @@
 
       <div class="feature col-md-4">
         <h2>Systèmes d'Exploitation </h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
           Découvrir!!
           <i class="fas fa-directions"></i>

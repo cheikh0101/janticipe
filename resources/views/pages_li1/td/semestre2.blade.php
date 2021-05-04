@@ -9,11 +9,11 @@
             <p>
             <ul>
                 <li>
-                    Analyse 1
+                    Analyse 2
                 </li>
 
                 <li>
-                    Algèbre 1
+                    Algèbre 2
                 </li>
             </ul>
             </p>

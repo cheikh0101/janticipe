@@ -17,7 +17,7 @@
               </ul>
           </p>
           <a href="#" class="btn btn-primary">
-            Voir!
+            Non disponible!
           </a>
         </div>
       </div>
@@ -39,7 +39,7 @@
             </ul>
             </p>
           <a href="#" class="btn btn-primary">
-            Voir!!
+            Non disponible!!
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@
               </ul>
           </p>
           <a href="#" class="btn btn-primary">
-            Voir!!
+            Non disponible!!
           </a>
         </div>
       </div>
