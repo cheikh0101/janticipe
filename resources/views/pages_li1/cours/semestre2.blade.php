@@ -17,10 +17,75 @@
                 </li>
             </ul>
             </p>
-            <a href="#" class="icon-link">
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursMathematiques2">
                 Découvrir!!
                 <i class="fas fa-directions"></i>
             </a>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="coursMathematiques2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Cours et Suggestions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>
+                                Cours
+                            </h5>
+                            <hr>
+                            <ul>
+                                <li>
+                                    Analyse 2
+                                    <ul>
+                                        <li>
+                                            <a href="img/l1/maths/ensemble et relation binaire.pdf">Ensemble et Relation Binaire</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="img/l1/maths/espace vectoriel.pdf">Espace Vectoriel</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="img/l1/maths/Fonctions.pdf">Fonctions</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/maths/FormulesTrigonometrie.pdf">Formules Trigonometriques</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/maths/Intégration.pdf">Intégration</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/maths/logique et raisonnement.pdf">Logique et Raisonnement</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/maths/Matrice.pdf">Matrice</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/maths/Suite.pdf">Suite</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Algèbre 2
+                                    <ul>
+                                        <li>
+                                            <a href=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin modal-->
+
         </div>
 
         <div class="feature col-md-4">
@@ -36,7 +101,7 @@
             </ul>
             </p>
             <a href="#" class="icon-link">
-                Découvrir!!
+                Non disponible!!
             </a>
         </div>
 

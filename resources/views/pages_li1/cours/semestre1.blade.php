@@ -18,7 +18,7 @@
             </ul>
             </p>
             <a href="#" class="icon-link" >
-                Découvrir!!
+                Non disponible!!
                 <i class="fas fa-directions"></i>
             </a>
 
@@ -134,7 +134,7 @@
                                     Algorithmique et programmation 1
                                     <ul>
                                         <li>
-
+                                            <a href="img/l1/algo1/algo1_complet_Thiam.pdf">Cours</a>
                                         </li>
                                     </ul>
                                 </li>

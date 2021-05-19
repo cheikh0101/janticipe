@@ -18,7 +18,7 @@
             </ul>
             </p>
             <a href="#" class="icon-link">
-                S'éxercer!!
+                Non disponible!!
                 <i class="fas fa-directions"></i>
             </a>
         </div>
@@ -36,7 +36,7 @@
             </ul>
             </p>
             <a href="#" class="icon-link">
-                S'éxercer!!
+                Non disponible!!
             </a>
         </div>
 
@@ -52,9 +52,59 @@
                 </li>
             </ul>
             </p>
-            <a href="#" class="icon-link">
-                S'éxercer!!
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#tdInformatique1">
+                S'exercer!!
             </a>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="tdInformatique1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">TD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>
+                                    Algorithmique et programmation 1
+                                    <ul>
+                                        <li>
+                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche1-generalites/generalites.PNG">Generalites et Instruction de Base</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche2-structures-operation de base/struct.PNG">Structures et Opérations de Base</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche3-structurede-controle/structures.PNG">Structures de Controle</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/algo2/exercices/les fiches/structures selectives.PNG">Structures Selectives</a>
+                                        </li>
+                                        <li>
+                                            <a href="img/l1/algo2/exercices/les fiches/examen 1er semestre.PNG">Examen 1er Semestre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Introduction aux systèmes d’exploitation
+                                    <ul>
+                                        <li>
+                                            <a href=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin modal-->
+
         </div>
 
     </div>

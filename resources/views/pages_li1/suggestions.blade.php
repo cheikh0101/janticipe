@@ -8,7 +8,7 @@
         <h2>Algorithme et Programmation 1</h2>
         <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
-          Découvrir!!
+          Indisponible!!
             <i class="fas fa-directions"></i>
         </a>
       </div>
@@ -17,7 +17,7 @@
         <h2>Algorithme et Programmation 2</h2>
         <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
-          Découvrir!!
+          Indisponible!!
           <i class="fas fa-directions"></i>
         </a>
       </div>
@@ -26,7 +26,7 @@
         <h2>Systèmes d'Exploitation </h2>
         <p>Pas encore disponible.</p>
         <a href="#" class="icon-link">
-          Découvrir!!
+          Indisponible!!
           <i class="fas fa-directions"></i>
         </a>
       </div>
