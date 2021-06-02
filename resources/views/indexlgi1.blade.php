@@ -146,7 +146,7 @@
   <div class="container">
 
     <div id="apropos">
-        @include('pages_li1.apropos')
+        @include('apropos')
     </div>
 
     <div id="cours">

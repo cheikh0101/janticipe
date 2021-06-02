@@ -85,9 +85,57 @@
                     </li>
                 </ul>
                 </p>
-                <a href="#" class="btn btn-primary">
-                    Non disponible
-                </a>
+
+                <!--debut modal-->
+                <div class="modal fade" id="coursGenieLogiciel" aria-hidden="true" aria-labelledby="coursGenieLogicielLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="coursGenieLogicielLabel">Développement Web Avancée</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=B4zfdci7VCE&list=PLA6zApbO92QY3iQMn48y31kOLB5A4f4cv&index=1">Présentation du Cours</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=k3c8sE_n2o8&list=PLA6zApbO92QY3iQMn48y31kOLB5A4f4cv&index=2">Introduction au Framework Angular et le langage TypeScript</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=74wAawxtY5Y&list=PLA6zApbO92QY3iQMn48y31kOLB5A4f4cv&index=12">Développement d'applications avec le Framework ANgular</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#coursGenieLogiciel2" data-bs-toggle="modal" data-bs-dismiss="modal">Introduction aux Génies logiciels</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="coursGenieLogiciel2" aria-hidden="true" aria-labelledby="coursGenieLogicielLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="coursGenieLogicielLabel2">Introduction aux Génies logiciels</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <li>
+
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#coursGenieLogiciel" data-bs-toggle="modal" data-bs-dismiss="modal">Développement Web Avancée</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" data-bs-toggle="modal" href="#coursGenieLogiciel" role="button">Voir</a>
+                <!--fin modal-->
+
             </div>
         </div>
         <div class="col-md-4 d-flex align-items-start">

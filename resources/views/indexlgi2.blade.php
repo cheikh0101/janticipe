@@ -83,7 +83,7 @@
   <!-- Page Content -->
   <div class="container">
 
-    @include('pages_li2.apropos')
+    @include('apropos')
 
     @include('pages_li2.cours.semestre3')
 
