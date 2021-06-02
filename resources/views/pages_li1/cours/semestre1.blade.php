@@ -1,6 +1,6 @@
 <div class="container py-5" id="featured-3">
 
-    <h2 class="pb-2 border-bottom">Cours Semestre 1 et Suggestions</h2>
+    <h2 class="pb-2 border-bottom">Cours Semestre 1</h2>
 
     <div class="row g-5 py-5">
 
@@ -88,8 +88,6 @@
                                     </ol>
                                 </li>
                             </ul>
-                            <h5>Suggestions</h5>
-                            <hr>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
@@ -121,14 +119,10 @@
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Cours et Suggestions</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Cours</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <h5>
-                                Cours
-                            </h5>
-                            <hr>
                             <ul>
                                 <li>
                                     Algorithmique et programmation 1
@@ -145,15 +139,6 @@
                                             <a href="img/l1/se/1.pdf">Cours Systèmes d'exploitation</a>
                                         </li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <h5>Suggestions</h5>
-                            <hr>
-                            <ul>
-                                <li>
-                                    <a href="img/l1/suggestions/openclassroom.pdf">
-                                        Apprendre à programmer en C
-                                    </a>
                                 </li>
                             </ul>
                         </div>

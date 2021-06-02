@@ -93,11 +93,11 @@
 
     <div class="row">
         <div class="col mb-5">
-          <button onclick="toggleReplyComment()" class="btn btn-primary btn-block">Espace Cadet</button>
+          <button onclick="toggleReplyComment()" class="btn btn-primary btn-block">Espace Cadet (li2) </button>
         </div>
 
         <div class="col">
-          <button onclick="toggleReply()" class="btn btn-primary btn-block">Espace Ainè</button>
+          <button onclick="toggleReply()" class="btn btn-primary btn-block">Espace Ainè (li3) </button>
         </div>
     </div>
 

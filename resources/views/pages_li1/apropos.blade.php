@@ -4,8 +4,7 @@
           <hr>
           <p>
               <b>J'ANTICIPE </b>
-              est une plateforme proposée par les étudiants en licence 2 Informatique promotion 2018-2020 de l'Université Iba Der Thiam de Thies à leurs
-              cadets de la promotion 2019-2020 en vue de leurs permettre de mieux débuter l'année universitaire à venir en les proposant
+              est une plateforme proposée par les étudiants en licence 2 Informatique promotion 2018-2020 de l'Université Iba Der Thiam de Thies pour permettre de mieux débuter l'année universitaire à venir en les proposant
               l'ensemble des <b> cours </b> et <b> travaux dirigés </b> de meme que des <b> Suggestions </b> et une foire aux questions communément appellé <b>FAQ</b> toujours dans l'optique de les aider
               à réussir dans de bonnes conditions.
 

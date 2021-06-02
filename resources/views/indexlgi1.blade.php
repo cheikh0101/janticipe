@@ -118,9 +118,6 @@
             <a class="nav-link" href="#tutos">Tutos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="rendez-vous">RV</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="http://samaforum.herokuapp.com/">Forum</a>
           </li>
         </ul>

@@ -106,12 +106,6 @@
             <a class="nav-link" href="#cours">Cours</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#td">TD</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#suggestions">Suggestions</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="http://samaforum.herokuapp.com/">Forum</a>
           </li>
         </ul>
