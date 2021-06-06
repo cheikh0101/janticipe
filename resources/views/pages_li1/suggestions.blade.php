@@ -22,13 +22,15 @@
                         <div class="modal-body">
                             <ul>
                                 <li>
-                                    <a href="img/l1/suggestions/openclassroom.pdf">
+                                    <a
+                                        href="https://drive.google.com/file/d/1Di2-WgCP8rdNsr71oda2xBHWwaSWxV2b/view?usp=sharing">
                                         Apprendre à programmer en C(pdf)
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="img/suggestions/compilez-sous-gnu-linux.pdf">
-                                        Compiler sous GNU/Linux
+                                    <a
+                                        href="https://drive.google.com/file/d/1uLa_y7SjcePlsN2lt_kNVrXZBevXOGot/view?usp=sharing">
+                                        Compiler sous GNU/Linux!
                                     </a>
                                 </li>
                                 <li>
@@ -86,7 +88,8 @@
                         <div class="modal-body">
                             <ul>
                                 <li>
-                                    <a href="img/l1/suggestions/openclassroom.pdf">
+                                    <a
+                                        href="https://drive.google.com/file/d/1Di2-WgCP8rdNsr71oda2xBHWwaSWxV2b/view?usp=sharing">
                                         Apprendre à programmer en C(pdf)
                                     </a>
                                 </li>
@@ -131,7 +134,8 @@
                         <div class="modal-body">
                             <ul>
                                 <li>
-                                    <a href="img/suggestions/reprenez-le-controle-a-l-aide-de-linux.pdf">
+                                    <a
+                                        href="https://drive.google.com/file/d/1BeBB7ZL1a-NXJpOcSJD0o23BSYrpMLIf/view?usp=sharing">
                                         Reprenez le controle à l'aide de Linux!
                                     </a>
                                 </li>

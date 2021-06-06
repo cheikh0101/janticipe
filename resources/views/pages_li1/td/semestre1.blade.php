@@ -7,15 +7,15 @@
         <div class="feature col-md-4">
             <h2>Mathématiques</h2>
             <p>
-            <ul>
-                <li>
-                    Analyse 1
-                </li>
+                <ul>
+                    <li>
+                        Analyse 1
+                    </li>
 
-                <li>
-                    Algèbre 1
-                </li>
-            </ul>
+                    <li>
+                        Algèbre 1
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link">
                 Non disponible!!
@@ -26,14 +26,14 @@
         <div class="feature col-md-4">
             <h2>Physique</h2>
             <p>
-            <ul>
-                <li>
-                    Fondamentaux de Physique
-                </li>
-                <li>
-                    Electricité
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        Fondamentaux de Physique
+                    </li>
+                    <li>
+                        Electricité
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link">
                 Non disponible!!
@@ -43,14 +43,14 @@
         <div class="feature col-md-4">
             <h2>Informatique</h2>
             <p>
-            <ul>
-                <li>
-                    Algorithmique et programmation 1
-                </li>
-                <li>
-                    Introduction aux systèmes d’exploitation
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        Algorithmique et programmation 1
+                    </li>
+                    <li>
+                        Introduction aux systèmes d’exploitation
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#tdInformatique1">
                 S'exercer!!
@@ -58,12 +58,13 @@
 
 
             <!-- Modal -->
-            <div class="modal fade" id="tdInformatique1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="tdInformatique1" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">TD</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title" id="staticBackdropLabel">TD</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <ul>
@@ -71,19 +72,29 @@
                                     Algorithmique et programmation 1
                                     <ul>
                                         <li>
-                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche1-generalites/generalites.PNG">Generalites et Instruction de Base</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/10hGLkmTg6Sp0ZYsO6-WEXiR_ll6ObZDV/view?usp=sharing">Generalites
+                                                et Instruction de Base</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche2-structures-operation de base/struct.PNG">Structures et Opérations de Base</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1EvKR5i0ZAtwqLFsyLCT6MMETsB8c08Xw/view?usp=sharing">Structures
+                                                et Opérations de Base</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo1/TD-CORRECTIONS/fiche3-structurede-controle/structures.PNG">Structures de Controle</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1aStGhEUz4cajb67SCEKruO13U9pLBBfX/view?usp=sharing">Structures
+                                                de Controle</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/les fiches/structures selectives.PNG">Structures Selectives</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1W2JFLCGBLoCTjBXOVfeF4WsaYsGkJ38x/view?usp=sharing">Structures
+                                                Selectives</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/les fiches/examen 1er semestre.PNG">Examen 1er Semestre</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1a4rIfYCcmxSIaF_tX-yLvwrnPXqxj3xm/view?usp=sharing">Examen
+                                                1er Semestre</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -98,7 +109,7 @@
                             </ul>
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
                         </div>
                     </div>
                 </div>

@@ -7,15 +7,15 @@
         <div class="feature col-md-4">
             <h2>Mathématiques</h2>
             <p>
-            <ul>
-                <li>
-                    Analyse 2
-                </li>
+                <ul>
+                    <li>
+                        Analyse 2
+                    </li>
 
-                <li>
-                    Algèbre 2
-                </li>
-            </ul>
+                    <li>
+                        Algèbre 2
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link">
                 Non disponible!!
@@ -26,14 +26,14 @@
         <div class="feature col-md-4">
             <h2>Physique</h2>
             <p>
-            <ul>
-                <li>
-                    Fondamentaux de Physique
-                </li>
-                <li>
-                    Electricité
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        Fondamentaux de Physique
+                    </li>
+                    <li>
+                        Electricité
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link">
                 Non disponible!!
@@ -43,14 +43,14 @@
         <div class="feature col-md-4">
             <h2>Informatique</h2>
             <p>
-            <ul>
-                <li>
-                    Algorithmique et programmation 2
-                </li>
-                <li>
-                    Architecture des Ordinateurs
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        Algorithmique et programmation 2
+                    </li>
+                    <li>
+                        Architecture des Ordinateurs
+                    </li>
+                </ul>
             </p>
             <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#tdInformatique2">
                 S'exercer!!
@@ -58,12 +58,13 @@
 
 
             <!-- Modal -->
-            <div class="modal fade" id="tdInformatique2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="tdInformatique2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">TD</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title" id="staticBackdropLabel">TD</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <ul>
@@ -71,22 +72,33 @@
                                     Algorithmique et programmation 2
                                     <ul>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/fiche4-iteration/les iterations.PNG">Iterations</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1nJ5ZGzY_-KgYAcLn_rjcxG1K4HMp_sqA/view?usp=sharing">Iterations</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/fiche5-types-composes/types composes.PNG">Types Composés</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1v4mlmA-NLf_YmQ7nTm_JD1oJ20xCAb6i/view?usp=sharing">Types
+                                                Composés</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/chaine-caractere/chaines de caractere.PNG">Chaines de Caractère</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1WgDnN9I-OQMI0VcHcvsLjZJ7SWu8ynzw/view?usp=sharing">Chaines
+                                                de Caractère</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/pointeurs-preprocesseurs/pointeurs et preprocesseurs.PNG">Pointeurs Preprocesseurs</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/11K3JOUGUoLZFUGqeyuzqDBpPWkl5oORw/view?usp=sharing">Pointeurs
+                                                Preprocesseurs</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/sous-prog/sous programmes et fichiers.PNG">Sous Programmes</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1eXlEnqF8yPNAevTNavyHIhunSVACd7zW/view?usp=sharing">Sous
+                                                Programmes</a>
                                         </li>
                                         <li>
-                                            <a href="img/l1/algo2/exercices/les fiches/examen 2eme semestre.PNG">Examen 2nd Semestre</a>
+                                            <a
+                                                href="https://drive.google.com/file/d/1c1OqOUTmQ-TcuEcpb12GmPq7OA3KcnqC/view?usp=sharing">Examen
+                                                2nd Semestre</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -101,7 +113,7 @@
                             </ul>
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermé</button>
                         </div>
                     </div>
                 </div>
