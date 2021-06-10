@@ -31,35 +31,48 @@
                                 <hr>
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/PROGRAMMATION MOBILE.pdf">
+                                        <a
+                                            href="https://drive.google.com/file/d/1YDd1oGXt26n5JqIfD6Ood4L7IJ3KJN9o/view?usp=sharing">
                                             Introduction
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/1.pdf">Les Activités et Intents</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1fZfqSLEwxfQbbzD9Gzon7FI6r8J-kS2m/view?usp=sharing">Les
+                                            Activités et Intents</a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/null (1).pdf">Les Menus</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1fXP7_JCEda5FpuKNwJ4Hny2ZjlswAEjG/view?usp=sharing">Les
+                                            Menus</a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/null (2).pdf">Services</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1VflAsxc9O3BQGhAZV2MnMYVPEBKa1GLh/view?usp=sharing">Services</a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/null.pdf">Notifications</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1ehjz0Ja9U60I20_EBJkGZ78wEYEJYhjA/view?usp=sharing">Notifications</a>
                                     </li>
                                 </ul>
                                 <h5>TD/TP</h5>
                                 <hr>
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_mobile/TP_1_2020.pdf">Ressources et Layouts</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1X-rVipoiO4hUdg2kIb0qTrmGm8p-u0UN/view?usp=sharing">Ressources
+                                            et Layouts</a>
                                     </li>
                                     <li>
-                                        <a href="TD_TP_3_2020_Android_Intents_Evenements.pdf">Android Intents
+                                        <a
+                                            href="https://drive.google.com/file/d/1Vmr_2DDscxX8svCLLNHJB8P35aljiNW1/view?usp=sharing">Android
+                                            Intents
                                             Evenements</a>
                                     </li>
                                     <li>
-                                        <a href="TP_2_2020_Android_Widegets_Evenements.pdf">Android Widegets
+                                        <a
+                                            href="https://drive.google.com/file/d/1L8qAePOoKAEEFiqW-6lX4WgzEtSdjd8p/view?usp=sharing">Android
+                                            Widegets
                                             Evenements</a>
                                     </li>
                                 </ul>
@@ -83,7 +96,9 @@
                             <div class="modal-body">
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/poo2/cours.pdf">Cours </a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1ZgLc7_3Rd_hHYG0njnwQWP1mZJw8Dsph/view?usp=sharing">Cours
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -129,7 +144,8 @@
                                 <hr>
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/dev_web_avance/cours_sall.pdf">Développement
+                                        <a
+                                            href="https://drive.google.com/file/d/1xBJvB-_NDToPUwSNg-IwEUC4G9XDxNYy/view?usp=sharing">Développement
                                             d’applications web
                                             avec le framework front-end Angular et
                                             le langage TypeScript</a>
@@ -219,10 +235,12 @@
                             <div class="modal-body">
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/bdd_avancees/Intro.pdf">Introduction</a>
+                                        <a
+                                            href="https://drive.google.com/file/d/1T97cTX_vFMciVLQziTX_FvS9n03IBfjW/view?usp=sharing">Introduction</a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/bdd_avancees/chap 3 concurrence_Part_One.pdf">Chapitre
+                                        <a
+                                            href="https://drive.google.com/file/d/1gIruoKZN2VUyy8T9eHLdgc1iPgKuo5EV/view?usp=sharing">Chapitre
                                             3</a>
                                     </li>
                                 </ul>
@@ -246,19 +264,27 @@
                             <div class="modal-body">
                                 <ul>
                                     <li>
-                                        <a href="img/l3/cours/gl/programmation_fonctionnelle/Chapitre 1.pdf">Chapitre 1
+                                        <a
+                                            href="https://drive.google.com/file/d/1oWPFXmt_Ex-fJfWPcyntjWT5qZZbecM9/view?usp=sharing">Chapitre
+                                            1
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/programmation_fonctionnelle/Chapitre 2.pdf">Chapitre 2
+                                        <a
+                                            href="https://drive.google.com/file/d/1z5RX82sh-SV7Hlzvk4NSz1USWFM2YW5e/view?usp=sharing">Chapitre
+                                            2
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/programmation_fonctionnelle/Chapitre 3.pdf">Chapitre 3
+                                        <a
+                                            href="https://drive.google.com/file/d/1DZcnSHp87epIpmpOZym2ZadHP1MuNDnT/view?usp=sharing">Chapitre
+                                            3
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="img/l3/cours/gl/programmation_fonctionnelle/Chapitre-2.pdf">Chapitre 4
+                                        <a
+                                            href="https://drive.google.com/file/d/1rIZuwAqXC2vt7l3AOPNDPXhtdlQIdUNK/view?usp=sharing">Chapitre
+                                            4
                                         </a>
                                     </li>
                                 </ul>
@@ -304,24 +330,7 @@
                 <div class="collapse" id="sans-fil">
                     <div class="card card-body">
                         <h5>Réseaux sans-fil</h5>
-                        <ul>
-                            <li>
-                                <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/01-CoursAdminSys-2020.pdf">01-Cours</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/03-CoursAdminRéseaux - ExprRela et Prog Shell.pdf">03-Cours</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/04-Planification-Automatisation.pdf">04-Cours</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/05-CoursAdminSys-Routage et parfeu.pdf">05-Cours</a>
-                            </li>
-                        </ul>
+                        <p>Non disponible!!</p>
                     </div>
                 </div>
 
@@ -351,10 +360,14 @@
                         <hr>
                         <ul>
                             <li>
-                                <a href="img/l3/cours/rt/iot/chapitre01.pdf">Chapitre 1</a>
+                                <a
+                                    href="https://drive.google.com/file/d/1HDc1henojzN6K-jkMaR-p-9yRK-h4lZ1/view?usp=sharing">Chapitre
+                                    1</a>
                             </li>
                             <li>
-                                <a href="img/l3/cours/rt/iot/Chapitre02.pdf">Chapitre 2</a>
+                                <a
+                                    href="https://drive.google.com/file/d/1fMkNU_vSxH8nepws9tVnG2yQ9V0ZxXDp/view?usp=sharing">Chapitre
+                                    2</a>
                             </li>
                         </ul>
                     </div>
@@ -388,38 +401,42 @@
                         <ol>
                             <li>
                                 <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/01-CoursAdminSys-2020.pdf">01-Cours</a>
+                                    href="https://drive.google.com/file/d/1u9qFt-WInz9sXu3vVsAM3ywVFDgghk4f/view?usp=sharing">01-Cours</a>
                             </li>
                             <li>
                                 <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/03-CoursAdminRéseaux - ExprRela et Prog Shell.pdf">03-Cours</a>
+                                    href="https://drive.google.com/file/d/1hE9ZJN2xN4S9nnJ9T_M1Bu7L5iHxh22k/view?usp=sharing">03-Cours</a>
                             </li>
                             <li>
                                 <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/04-Planification-Automatisation.pdf">04-Cours</a>
+                                    href="https://drive.google.com/file/d/1HNDJkEdVwZwDOhn6oMGhFGoYRWGeBM7t/view?usp=sharing">04-Cours</a>
                             </li>
                             <li>
                                 <a
-                                    href="img/l3/cours/rt/administration-systèmes-réseaux/05-CoursAdminSys-Routage et parfeu.pdf">05-Cours</a>
+                                    href="https://drive.google.com/file/d/1OjkWppeaPgo-mfG5fJXMvd8PTqSqxQEe/view?usp=sharing">05-Cours</a>
                             </li>
                         </ol>
                         <h5>Sécurité des réseaux</h5>
                         <hr>
                         <ul>
                             <li>
-                                <a href="img/l3/cours/rt/cours-securite/Chap_01_Introduction_Securite.pdf">Introduction
+                                <a
+                                    href="https://drive.google.com/file/d/11EG1uqfLQ7wXN6NS3oUtzoRTKNpQSVpI/view?usp=sharing">Introduction
                                     aux Réseaux</a>
                             </li>
                             <li>
-                                <a href="img/l3/cours/rt/cours-securite/Chap_02_Securisation_equipements.pdf">Sécurisation
+                                <a
+                                    href="https://drive.google.com/file/d/1hlM42tnPHj_jIa-HoDqoou0f4DoRE0yl/view?usp=sharing">Sécurisation
                                     équipements</a>
                             </li>
                             <li>
-                                <a href="img/l3/cours/rt/cours-securite/Chap_03_Pare_feu_ACL.pdf">Pare
+                                <a
+                                    href="https://drive.google.com/file/d/1zGVmst0SeYqvLzYlA97ew97ILzdcdKhk/view?usp=sharing">Pare
                                     feu</a>
                             </li>
                             <li>
-                                <a href="img/l3/cours/rt/cours-securite/Chap_04_Architectures_securisees.pdf">Architectures
+                                <a
+                                    href="https://drive.google.com/file/d/1xnKmgSKzbxphPWQs2Lh_x94u-X2KS_yJ/view?usp=sharing">Architectures
                                     Sécurisées</a>
                             </li>
                         </ul>

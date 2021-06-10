@@ -1,9 +1,6 @@
 <div class="container py-5" id="featured-3">
-
     <h2 class="pb-2 border-bottom">Cours Semestre 1</h2>
-
     <div class="row g-5 py-5">
-
         <div class="feature col-md-4">
             <h2>Mathématiques</h2>
             <p>
@@ -20,9 +17,7 @@
                 Non disponible!!
                 <i class="fas fa-directions"></i>
             </a>
-
         </div>
-
         <div class="feature col-md-4">
             <h2>Physique</h2>
             <p>
@@ -38,7 +33,6 @@
             <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursPhysique">
                 Découvrir!!
             </a>
-
             <!-- Modal -->
             <div class="modal fade" id="coursPhysique" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -106,7 +100,6 @@
             </div>
             <!--fin modal-->
         </div>
-
         <div class="feature col-md-4">
             <h2>Informatique</h2>
             <p>
@@ -122,7 +115,6 @@
             <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique">
                 Découvrir!!
             </a>
-
             <!-- Modal -->
             <div class="modal fade" id="coursInformatique" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -163,6 +155,5 @@
             </div>
             <!--fin modal-->
         </div>
-
     </div>
 </div>
