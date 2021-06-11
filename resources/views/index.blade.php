@@ -28,6 +28,8 @@
                     <a class="nav-link active" aria-current="page" href="lgi1">LI 1</a>
                     <a class="nav-link active" href="lgi2">LI 2</a>
                     <a class="nav-link active" href="lgi3">LI 3</a>
+                    <a class="nav-link active" href="projets">Projets</a>
+                    <a class="nav-link active" href="#">Blog</a>
                     <a class="nav-link active" href="http://samaforum.herokuapp.com/">Forum</a>
                 </nav>
             </div>
@@ -53,9 +55,6 @@
             <p class="m-0 text-center text-white">Copyright &copy; LI -- Promo 2018-2019 </p>
         </footer>
     </div>
-
-
-
 </body>
 
 </html>

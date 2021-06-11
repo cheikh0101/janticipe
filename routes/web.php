@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/projets', function () {
+    return view('projets');
+});
+
 Route::get('/lgi1', function () {
     return view('indexlgi1');
 });
