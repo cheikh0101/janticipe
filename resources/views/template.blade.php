@@ -120,9 +120,7 @@
                     l'Université Iba Der Thiam de Thies pour permettre aux étudiants de tous les niveaux (l1,l2,l3)
                     d'accéder
                     aux documents cibles de meme que
-                    des <b> Suggestions </b> et une foire
-                    aux questions communément appellé <b>FAQ</b>.
-
+                    des <b> Suggestions </b> .
                 </p>
                 <p>
                     Ne s'arretant pas là nous les offrons aussi un <b>forum</b> de discussion à but pédagogique dans

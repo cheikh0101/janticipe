@@ -103,7 +103,7 @@
             </a>
         </div>
         <div class="feature col-md-4">
-            <h2>Informatique</h2>
+            <h2>Informatique <i class="fa fa-file-code-o" aria-hidden="true"></i> </h2>
             <p>
                 <ul>
                     <li>

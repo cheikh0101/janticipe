@@ -145,7 +145,7 @@
             </p>
         </div>
         <div class="feature col-md-4">
-            <h5>Sujet 6:4-Réalisation d'un planning d'occupation de salles de cours dans
+            <h5>Sujet 6:Réalisation d'un planning d'occupation de salles de cours dans
                 un établissement scolaire</h5>
         </div>
     </div>

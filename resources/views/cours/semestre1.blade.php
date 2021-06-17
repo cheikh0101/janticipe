@@ -1,8 +1,5 @@
 @extends('template')
-
 @section('content')
-
-
 <div class="container py-5" id="featured-3">
     <h2 class="pb-2 border-bottom">Cours Semestre 1</h2>
     <div class="row g-5 py-5">
@@ -106,7 +103,7 @@
             <!--fin modal-->
         </div>
         <div class="feature col-md-4">
-            <h2>Informatique</h2>
+            <h2>Informatique <i class="fa fa-code" aria-hidden="true"></i> </h2>
             <p>
                 <ul>
                     <li>
