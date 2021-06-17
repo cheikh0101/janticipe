@@ -1,6 +1,10 @@
+@extends('template')
+@section('content')
+
+
 <div class="container py-5" id="featured-3">
 
-    <h2 class="pb-2 border-bottom">TD Semestre 2</h2>
+    <h2 class="pb-2 border-bottom">TD Semestre 1</h2>
 
     <div class="row g-5 py-5">
 
@@ -9,11 +13,11 @@
             <p>
                 <ul>
                     <li>
-                        Analyse 2
+                        Analyse 1
                     </li>
 
                     <li>
-                        Algèbre 2
+                        Algèbre 1
                     </li>
                 </ul>
             </p>
@@ -45,20 +49,20 @@
             <p>
                 <ul>
                     <li>
-                        Algorithmique et programmation 2
+                        Algorithmique et programmation 1
                     </li>
                     <li>
-                        Architecture des Ordinateurs
+                        Introduction aux systèmes d’exploitation
                     </li>
                 </ul>
             </p>
-            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#tdInformatique2">
+            <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#tdInformatique1">
                 S'exercer!!
             </a>
 
 
             <!-- Modal -->
-            <div class="modal fade" id="tdInformatique2" data-bs-backdrop="static" data-bs-keyboard="false"
+            <div class="modal fade" id="tdInformatique1" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
@@ -69,41 +73,40 @@
                         <div class="modal-body">
                             <ul>
                                 <li>
-                                    Algorithmique et programmation 2
+                                    Algorithmique et programmation 1
                                     <ul>
                                         <li>
                                             <a
-                                                href="https://drive.google.com/file/d/1nJ5ZGzY_-KgYAcLn_rjcxG1K4HMp_sqA/view?usp=sharing">Iterations</a>
+                                                href="https://drive.google.com/file/d/10hGLkmTg6Sp0ZYsO6-WEXiR_ll6ObZDV/view?usp=sharing">Generalites
+                                                et Instruction de Base</a> &nbsp;
+                                            <a href="">
+                                                Correction
+                                            </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://drive.google.com/file/d/1v4mlmA-NLf_YmQ7nTm_JD1oJ20xCAb6i/view?usp=sharing">Types
-                                                Composés</a>
+                                                href="https://drive.google.com/file/d/1EvKR5i0ZAtwqLFsyLCT6MMETsB8c08Xw/view?usp=sharing">Structures
+                                                et Opérations de Base</a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://drive.google.com/file/d/1WgDnN9I-OQMI0VcHcvsLjZJ7SWu8ynzw/view?usp=sharing">Chaines
-                                                de Caractère</a>
+                                                href="https://drive.google.com/file/d/1aStGhEUz4cajb67SCEKruO13U9pLBBfX/view?usp=sharing">Structures
+                                                de Controle</a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://drive.google.com/file/d/11K3JOUGUoLZFUGqeyuzqDBpPWkl5oORw/view?usp=sharing">Pointeurs
-                                                Preprocesseurs</a>
+                                                href="https://drive.google.com/file/d/1W2JFLCGBLoCTjBXOVfeF4WsaYsGkJ38x/view?usp=sharing">Structures
+                                                Selectives</a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://drive.google.com/file/d/1eXlEnqF8yPNAevTNavyHIhunSVACd7zW/view?usp=sharing">Sous
-                                                Programmes</a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://drive.google.com/file/d/1c1OqOUTmQ-TcuEcpb12GmPq7OA3KcnqC/view?usp=sharing">Examen
-                                                2nd Semestre</a>
+                                                href="https://drive.google.com/file/d/1a4rIfYCcmxSIaF_tX-yLvwrnPXqxj3xm/view?usp=sharing">Examen
+                                                1er Semestre</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    Architecture des Ordinateurs
+                                    Introduction aux systèmes d’exploitation
                                     <ul>
                                         <li>
                                             <a href=""></a>
@@ -124,3 +127,5 @@
 
     </div>
 </div>
+
+@endsection

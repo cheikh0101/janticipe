@@ -1,3 +1,6 @@
+@extends('template')
+@section('content')
+
 <div class="container py-5" id="featured-3">
 
     <h2 class="pb-2 border-bottom">Suggestions</h2>
@@ -153,3 +156,4 @@
 
     </div>
 </div>
+@endsection

@@ -61,11 +61,10 @@ class ForumController extends Controller
     public function show(Forum $forum)
     {
         if ($forum->user->genre === "masculin") {
-            $image = "xxx";
+            $image = "https://bootdey.com/img/Content/avatar/avatar1.png";
         } else {
-            $image = "femme";
+            $image = "https://bootdey.com/img/Content/avatar/avatar1.png";
         }
-        static $i;
         return view('forum.show', compact('forum', 'image'));
     }
 

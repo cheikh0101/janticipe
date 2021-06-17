@@ -1,3 +1,7 @@
+@extends('template')
+@section('content')
+
+
 <div class="container py-5" id="hanging-icons">
     <h2 class="pb-2 border-bottom">Cours -- Semestre 5 (Option GL) </h2>
     <div class="row g-5 py-5">
@@ -447,3 +451,4 @@
         </div>
     </div>
 </div>
+@endsection
