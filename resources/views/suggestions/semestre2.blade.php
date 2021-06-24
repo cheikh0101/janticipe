@@ -6,7 +6,7 @@
     <div class="row g-5 py-5">
         <div class="feature col-md-4">
             <div class="card border-0 shadow">
-                <img src="../img/code/{{rand(1,8)}}.png" class="card-img-top" alt="...">
+                <img src="../img/code/{{rand(1,5)}}.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <div class="card-text text-black-50">
                         <a href="https://drive.google.com/file/d/1Di2-WgCP8rdNsr71oda2xBHWwaSWxV2b/view?usp=sharing">
@@ -18,7 +18,7 @@
         </div>
         <div class="feature col-md-4">
             <div class="card border-0 shadow">
-                <img src="../img/code/{{rand(1,8)}}.png" class="card-img-top" alt="...">
+                <img src="../img/code/{{rand(1,5)}}.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <div class="card-text text-black-50">
                         <a
@@ -30,7 +30,7 @@
         </div>
         <div class="feature col-md-4">
             <div class="card border-0 shadow">
-                <img src="../img/code/{{rand(1,8)}}.png" class="card-img-top" alt="...">
+                <img src="../img/code/{{rand(1,5)}}.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <div class="card-text text-black-50">
                         <a

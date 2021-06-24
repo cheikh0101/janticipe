@@ -74,6 +74,10 @@ Route::get('/projets', function () {
     return view('projets/projets');
 });
 
+Route::get('/jumelage', function () {
+    return view('jumelage/jumelage');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('forum', 'App\Http\Controllers\ForumController');

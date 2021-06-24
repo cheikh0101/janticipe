@@ -71,7 +71,7 @@
 </div>
 
 <div class="container py-5">
-    <h2 class="pb-2 border-bottom">.Partage.</h2>
+    <h2 class="pb-2 border-bottom">Partage</h2>
     <div class="row g-5 py-5">
         <div class="col-md-4 d-flex align-items-start">
             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
@@ -114,5 +114,40 @@
     </div>
 </div>
 
+<button class="btne btn-primary d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+    aria-controls="offcanvasTop">Toggle top offcanvas</button>
 
+<div class="offcanvas offcanvas-top bg-secondary text-white " tabindex="-1" id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">Jumelage 2020-2021</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>
+            Comme chaque année au niveau de la LI de l'UIDT un jumelage s'effectue entre la LI2 et la LI1.
+            Pour plus d'informations concernant les objectifs et le processus du jumelage cliquez <a
+                href="/jumelage">ici</a>.
+        </p>
+        <a href="/jumelage" class="btn btn-primary">Jumelage</a>
+    </div>
+</div>
+<script>
+    const Modal = document.querySelector('.offcanvas');
+Modal.style.display = "none";
+const boutonTrigger = document.querySelector('.btne');
+boutonTrigger.style.display = "none";
+
+window.addEventListener('scroll', myfunc);
+let x = 0;
+function myfunc() {
+    x += 1;
+    console.log(x);
+    if (x == 5) {
+        boutonTrigger.click();
+        Modal.style.display = "block";
+
+    }
+}
+</script>
 @endsection
