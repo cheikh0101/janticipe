@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "jumelage",
+            "database": "/home/cheikh/Bureau/perso/jumellage/laravel/database/database.sqlite"
+        }
+    ]
+}

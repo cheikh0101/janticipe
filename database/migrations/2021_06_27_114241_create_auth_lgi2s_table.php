@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRendezVousesTable extends Migration
+class CreateAuthLgi2sTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateRendezVousesTable extends Migration
      */
     public function up()
     {
-        Schema::create('rendez_vouses', function (Blueprint $table) {
+        Schema::create('auth_lgi2s', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('prenom');
-            $table->string('email');
-            $table->string('number');
-            $table->longText('content');
+            $table->string('email')->unique();
+            $table->string('password');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateRendezVousesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rendez_vouses');
+        Schema::dropIfExists('auth_lgi2s');
     }
 }

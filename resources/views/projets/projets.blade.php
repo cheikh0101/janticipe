@@ -258,13 +258,13 @@
 </button>
 
 <!-- The Modal -->
-<div class="modal fade bg-info" id="myModal">
+<div class="modal fade" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title font-italic">🥳🥳🥳🥳🥳🥳</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title font-italic">🥳🥳🥳Lou Bess Takk🥳🥳🥳</h4>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
 
             <!-- Modal body -->

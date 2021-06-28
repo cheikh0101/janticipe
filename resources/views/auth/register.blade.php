@@ -41,29 +41,6 @@
                                 @enderror
                             </div>
                         </div>
-
-
-                        <div class="form-group row">
-                            <label for="password-confirm"
-                                class="col-md-4 col-form-label text-md-right">{{ __('Genre') }}</label>
-
-                            <div class="col-md-6">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="genre" id=""
-                                            value="masculin"> Masculin
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="genre" id="" value="feminin">
-                                        Féminin
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="form-group row">
                             <label for="password"
                                 class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>

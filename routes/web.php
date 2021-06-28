@@ -1,9 +1,10 @@
 <?php
 
+use App\Models\authLgi1;
+use App\Models\AuthLgi2;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
-use App\Models\RendezVous;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,13 +76,38 @@ Route::get('/projets', function () {
 });
 
 Route::get('/jumelage', function () {
-    return view('jumelage/jumelage');
+    return view('jumelage/login');
 });
+
+Route::post('/jumelage', function (Request $request) {
+
+    $authLgi1 = authLgi1::whereEmail($request->email)->wherePassword($request->password)->first();
+    $authLgi2 = AuthLgi2::whereEmail($request->email)->wherePassword($request->password)->first();
+    if ($authLgi1 == null && $authLgi2 == null) {
+        return view('jumelage/login')->with(['message' => 'Adresse mail ou mot de passe incorrecte']);
+    } elseif ($authLgi1 != null && $authLgi2 == null) {
+        //recuperation de tt les infos concernant l'utilisateur authentifie
+        $id = authLgi1::where('email', '=', $request->email)->get();
+        //supprimer les infos dans la bdd
+        authLgi1::destroy($id);
+        $tmp = 1;
+        return view('jumelage/jumelage', compact('tmp'));
+    } else {
+        $id = AuthLgi2::where('email', '=', $request->email)->get();
+        AuthLgi2::destroy($id);
+        $tmp = 2;
+        return view('jumelage/jumelage', compact('tmp'));
+    }
+})->name('jumelageLogin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('forum', 'App\Http\Controllers\ForumController');
+Route::resource('aine', 'App\Http\Controllers\AineController');
 
-Route::resource('ForumStatistique', 'App\Http\Controllers\StatistiqueController');
+Route::resource('cadet', 'App\Http\Controllers\CadetController');
+
+Route::resource('authlgi1', 'App\Http\Controllers\AuthLgi1Controller');
+
+Route::resource('authlgi2', 'App\Http\Controllers\AuthLgi2Controller');
 
 Auth::routes();

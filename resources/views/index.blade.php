@@ -133,7 +133,7 @@
     </div>
 </div>
 <script>
-    const Modal = document.querySelector('.offcanvas');
+    /*    const Modal = document.querySelector('.offcanvas');
 Modal.style.display = "none";
 const boutonTrigger = document.querySelector('.btne');
 boutonTrigger.style.display = "none";
@@ -148,6 +148,6 @@ function myfunc() {
         Modal.style.display = "block";
 
     }
-}
+}*/
 </script>
 @endsection

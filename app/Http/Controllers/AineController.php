@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comment;
+use App\Models\Aine;
 use Illuminate\Http\Request;
 
-class CommentController extends Controller
+class AineController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -28,7 +24,7 @@ class CommentController extends Controller
      */
     public function create()
     {
-        //
+        return view('aine.create');
     }
 
     /**
@@ -39,16 +35,35 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(
+            [
+                'prenom' => 'required',
+                'nom' => 'required',
+                'num_telephone' => 'required',
+                'adresse_mail' => 'required',
+            ]
+        );
+
+        $cadet = new Aine();
+        $cadet->prenom = $request->input('prenom');
+        $cadet->nom = $request->input('nom');
+        $cadet->adresse_mail = $request->input('adresse_mail');
+        $cadet->num_telephone = $request->input('num_telephone');
+        $cadet->save();
+
+        $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
+
+        //return view('jumelage/jumelage', compact('message'));
+        return back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\Aine  $aine
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function show(Aine $aine)
     {
         //
     }
@@ -56,10 +71,10 @@ class CommentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\Aine  $aine
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comment $comment)
+    public function edit(Aine $aine)
     {
         //
     }
@@ -68,10 +83,10 @@ class CommentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\Aine  $aine
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comment $comment)
+    public function update(Request $request, Aine $aine)
     {
         //
     }
@@ -79,10 +94,10 @@ class CommentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\Aine  $aine
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy(Aine $aine)
     {
         //
     }

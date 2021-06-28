@@ -74,7 +74,7 @@
                         @endif
                         @else
                         <li class="nav-item ">
-                            <a id="" class="nav-link " href=" {{route('forum.index')}} ">
+                            <a id="" class="nav-link " href=" / ">
                                 Acceuil
                             </a>
                         </li>
@@ -88,12 +88,6 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a href=" {{route('forum.create')}} " class="dropdown-item">
-                                    Créer un sujet
-                                </a>
-                                <a href="{{route('ForumStatistique.index')}}" class="dropdown-item">
-                                    Statistiques
-                                </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
