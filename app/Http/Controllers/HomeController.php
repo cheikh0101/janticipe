@@ -25,23 +25,24 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function my_rand($max)
     {
-        //on affiche les 4 derniers elements en utilisant la pagination
-        $cadets = Cadet::latest()->paginate(4);
-        $aines = Aine::latest()->paginate(4);
-
-        $authLgi1 = authLgi1::all();
-        $authLgi2 = AuthLgi2::all();
-
+        $tab = [];
+        for ($i = 1; $i < $max + 1; $i++) {
+            $tab[$i] = $i;
+        }
+        $a = shuffle($tab);
+        return $tab;
+    }
+    public function jumelage()
+    {
         //on compte les etudiants inscris en lgi1 et lgi2
         $nbreCadet = Cadet::count();
         $nbreAine = Aine::count();
+        $tableauJumele = $this->my_rand($nbreCadet);
         $j = 1;
         for ($i = 1; $i < $nbreCadet + 1; $i++) {
             $tab[$i] =  Aine::findOrFail($j);
-            $tab1[$i] =  Cadet::findOrFail($nbreCadet - $i + 1);
-            //$tab1[$i] =  Cadet::findOrFail(rand(1, $nbreCadet));
             if ($j === $nbreAine) {
                 $j = 1;
             } else {
@@ -49,13 +50,26 @@ class HomeController extends Controller
             }
         }
 
+        foreach ($tableauJumele as $key => $value) {
+            $tab1[$value] =  Cadet::findOrFail($value);
+        }
+        return view('jumelage/result', compact(
+            'tab',
+            'tab1',
+        ));
+    }
+    public function index()
+    {
+        //on affiche les 4 derniers elements en utilisant la pagination
+        $cadets = Cadet::all();
+        $aines = Aine::all();
+        $authLgi1 = authLgi1::all();
+        $authLgi2 = AuthLgi2::all();
         return view('home', compact(
             'cadets',
             'aines',
-            'tab',
-            'tab1',
             'authLgi1',
-            'authLgi2'
+            'authLgi2',
         ));
     }
 }

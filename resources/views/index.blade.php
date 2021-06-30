@@ -1,8 +1,17 @@
 @extends('template')
-
 @section('content')
-
 <div class="container col-xxl-8 px-4 py-0">
+    @isset($message)
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <strong>
+            {{$message}}
+        </strong>
+    </div>
+    @endisset
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
             <img src="img/cours.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"

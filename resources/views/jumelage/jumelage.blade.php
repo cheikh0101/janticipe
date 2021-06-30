@@ -2,17 +2,6 @@
 @section('content')
 <main>
     <div class="container py-4">
-        @isset($message)
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                <span class="sr-only">Close</span>
-            </button>
-            <strong>
-                {{$message}}
-            </strong>
-        </div>
-        @endisset
         <div class="p-2 mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
                 <div class="my-5 text-center">

@@ -50,8 +50,7 @@ class CadetController extends Controller
         $cadet->num_telephone = $request->input('num_telephone');
         $cadet->save();
         $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
-        //return view('jumelage/jumelage', compact('message'));
-        return view('index');
+        return view('index', compact('message'));
     }
 
     /**
@@ -96,6 +95,7 @@ class CadetController extends Controller
      */
     public function destroy(Cadet $cadet)
     {
-        //
+        Cadet::destroy($cadet->id);
+        return back();
     }
 }

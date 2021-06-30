@@ -5,6 +5,7 @@ use App\Models\AuthLgi2;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\DompdfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -102,6 +103,8 @@ Route::post('/jumelage', function (Request $request) {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/jumele', [App\Http\Controllers\HomeController::class, 'jumelage'])->name('jumelage');
+
 Route::resource('aine', 'App\Http\Controllers\AineController');
 
 Route::resource('cadet', 'App\Http\Controllers\CadetController');
@@ -111,3 +114,6 @@ Route::resource('authlgi1', 'App\Http\Controllers\AuthLgi1Controller');
 Route::resource('authlgi2', 'App\Http\Controllers\AuthLgi2Controller');
 
 Auth::routes();
+
+//pdf
+Route::get('/pdf-generate', 'App\Http\Controllers\DompdfController@generatePDF');

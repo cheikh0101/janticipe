@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\AuthLgi2;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AuthMailLgi1;
 
 class AuthLgi2Controller extends Controller
 {
@@ -45,6 +47,13 @@ class AuthLgi2Controller extends Controller
         // Les résultats seront des chaînes de 10 caractères contenant uniquement des chiffres et des lettres minuscules
         $auth->password = bin2hex(openssl_random_pseudo_bytes(5));
         $auth->save();
+        //Envoi de mails
+        $details = [
+            'email' => $auth->email,
+            'password' => $auth->password
+        ];
+
+        Mail::to($auth->email)->send(new AuthMailLgi1($details));
         return back();
     }
 

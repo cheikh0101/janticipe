@@ -116,6 +116,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -126,11 +127,17 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
+                        <td>
+                            <form action=" {{route('cadet.destroy',$item)}} " method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Supprimer</button>
+                            </form>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
-            {{$cadets->links()}}
         </div>
     </div>
 
@@ -159,52 +166,12 @@
                     @endforeach
                 </tbody>
             </table>
-            {{$aines->links()}}
         </div>
     </div>
 
     <div class="row">
         <div class="col">
-            <h5>Jumelage de la LGI 1</h5>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#id</th>
-                        <th>Prénom</th>
-                        <th>Nom</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($tab1 as $item)
-                    <tr>
-                        <td>{{$item->id}}</td>
-                        <td>{{$item->prenom}}</td>
-                        <td>{{$item->nom}}</td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
-        <div class="col">
-            <h5>Jumelage de la LGI 2</h5>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#id</th>
-                        <th>Prénom</th>
-                        <th>Nom</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($tab as $item)
-                    <tr>
-                        <td>{{$item->id}}</td>
-                        <td>{{$item->prenom}}</td>
-                        <td>{{$item->nom}}</td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
+            <a href=" {{route('jumelage')}} " class="btn btn-primary">Je jumele</a>
         </div>
     </div>
 </div>

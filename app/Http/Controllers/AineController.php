@@ -43,18 +43,15 @@ class AineController extends Controller
                 'adresse_mail' => 'required',
             ]
         );
-
         $cadet = new Aine();
         $cadet->prenom = $request->input('prenom');
         $cadet->nom = $request->input('nom');
         $cadet->adresse_mail = $request->input('adresse_mail');
         $cadet->num_telephone = $request->input('num_telephone');
         $cadet->save();
-
         $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
 
-        //return view('jumelage/jumelage', compact('message'));
-        return back();
+        return view('index', compact('message'));
     }
 
     /**

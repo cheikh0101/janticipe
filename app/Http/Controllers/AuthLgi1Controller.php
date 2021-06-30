@@ -47,8 +47,6 @@ class AuthLgi1Controller extends Controller
         // Les résultats seront des chaînes de 10 caractères contenant uniquement des chiffres et des lettres minuscules
         $auth->password = bin2hex(openssl_random_pseudo_bytes(5));
         $auth->save();
-        //static $tab = array();
-        //$tab[] = $auth;
         //Envoi de mails
         $details = [
             'email' => $auth->email,
