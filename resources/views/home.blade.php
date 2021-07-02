@@ -116,7 +116,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
-                        <th>Actions</th>
+                        <!--<th>Actions</th>-->
                     </tr>
                 </thead>
                 <tbody>
@@ -127,7 +127,7 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
-                        <td>
+                        <td class="d-none">
                             <form action=" {{route('cadet.destroy',$item)}} " method="post">
                                 @csrf
                                 @method('DELETE')
@@ -171,7 +171,8 @@
 
     <div class="row">
         <div class="col">
-            <a href=" {{route('jumelage')}} " class="btn btn-primary">Je jumele</a>
+            <a href=" {{route('jumelage')}} " class="btn btn-primary">Je jumele en envoyant les mails et la creation
+                d'un pdf</a>
         </div>
     </div>
 </div>

@@ -27,11 +27,14 @@ class HomeController extends Controller
      */
     public function my_rand($max)
     {
-        $tab = [];
         for ($i = 1; $i < $max + 1; $i++) {
-            $tab[$i] = $i;
+            $tab[$i] = rand(1, $max);
+            for ($j = 1; $j <= $i - 1; $j++) {
+                if ($tab[$i] == $tab[$j]) {
+                    $i = $i - 1;
+                }
+            }
         }
-        $a = shuffle($tab);
         return $tab;
     }
     public function jumelage()
@@ -39,7 +42,6 @@ class HomeController extends Controller
         //on compte les etudiants inscris en lgi1 et lgi2
         $nbreCadet = Cadet::count();
         $nbreAine = Aine::count();
-        $tableauJumele = $this->my_rand($nbreCadet);
         $j = 1;
         for ($i = 1; $i < $nbreCadet + 1; $i++) {
             $tab[$i] =  Aine::findOrFail($j);
@@ -48,14 +50,13 @@ class HomeController extends Controller
             } else {
                 $j++;
             }
+            $jumelage[1][$i] = $tab[$i];
+            $tab2[$i] =  Cadet::findOrFail($this->my_rand($nbreCadet)[$i]);
+            $jumelage[0][$i] = $tab2[$i];
         }
 
-        foreach ($tableauJumele as $key => $value) {
-            $tab1[$value] =  Cadet::findOrFail($value);
-        }
         return view('jumelage/result', compact(
-            'tab',
-            'tab1',
+            'jumelage'
         ));
     }
     public function index()
@@ -65,6 +66,8 @@ class HomeController extends Controller
         $aines = Aine::all();
         $authLgi1 = authLgi1::all();
         $authLgi2 = AuthLgi2::all();
+
+
         return view('home', compact(
             'cadets',
             'aines',

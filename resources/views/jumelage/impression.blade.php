@@ -25,17 +25,36 @@
         <caption>Jumelage entre la LI1 et la LI2 2020-2021</caption>
         <thead>
             <tr>
-                <th>Id</th>
+                <th colspan="3">LI1</th>
+                <th>-</th>
+                <th colspan="3">LI2</th>
+            </tr>
+            <tr>
                 <th>PRENOM</th>
                 <th>NOM</th>
+                <th>N° téléphone</th>
+                <th>
+                    <-->
+                </th>
+                <th>PRENOM</th>
+                <th>NOM</th>
+                <th>N° téléphone</th>
             </tr>
         </thead>
         <tbody>
+            @foreach ($jumelage[0] as $item)
             <tr>
-                <td>hello</td>
-                <td>halla</td>
-                <td>xxx</td>
+                <td>{{$item->prenom}}</td>
+                <td>{{$item->nom}}</td>
+                <td>{{$item->num_telephone}}</td>
+                <td>
+                    <-->
+                </td>
+                <td>{{$item->prenom}}</td>
+                <td>{{$item->nom}}</td>
+                <td>{{$item->num_telephone}}</td>
             </tr>
+            @endforeach
         </tbody>
     </table>
 

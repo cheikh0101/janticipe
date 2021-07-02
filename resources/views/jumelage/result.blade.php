@@ -26,11 +26,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <h3 class="border-bottom text-center">Jumelage entre la LI1 et la LI2 2020-2021</h3>
+                <h3 class="text-center"> <u> Jumelage entre la LI1 et la LI2 2020-2021 </u></h3>
             </div>
         </div>
         <div class="row border-bottom">
-
             <div class="col">
                 <table class="table">
                     <thead>
@@ -41,7 +40,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($tab1 as $item)
+                        @foreach ($jumelage[0] as $item)
                         <tr>
                             <td>{{$item->id}}</td>
                             <td>{{$item->prenom}}</td>
@@ -61,10 +60,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($tab as $item)
+                        @foreach ($jumelage[1] as $item)
                         <tr>
                             <td>
-                                <==> {{$item->id}}
+                                {{$item->id}}
                             </td>
                             <td>{{$item->prenom}}</td>
                             <td>{{$item->nom}}</td>
@@ -75,6 +74,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
