@@ -134,15 +134,15 @@
     </div>
     <div class="offcanvas-body">
         <p>
-            Comme chaque année au niveau de la LI de l'UIDT un jumelage s'effectue entre la LI2 et la LI1.
-            Pour plus d'informations concernant les objectifs et le processus du jumelage cliquez <a
-                href="/jumelage">ici</a>.
+            Comme chaque année au niveau de la LI de l'UIDT un 🤩jumelage🤩 s'effectue entre la LI2 et la LI1.
+            <br>
+            Restez à l'écoute bientot le démarage des 🤩Inscriptions🤩.
         </p>
-        <a href="/jumelage" class="btn btn-primary">Jumelage</a>
+        <a href="" class="btn btn-primary">Bientot disponible</a>
     </div>
 </div>
 <script>
-    /*  const Modal = document.querySelector('.offcanvas');
+    const Modal = document.querySelector('.offcanvas');
 Modal.style.display = "none";
 const boutonTrigger = document.querySelector('.btne');
 boutonTrigger.style.display = "none";
@@ -157,6 +157,6 @@ function myfunc() {
         Modal.style.display = "block";
 
     }
-}*/
+}
 </script>
 @endsection

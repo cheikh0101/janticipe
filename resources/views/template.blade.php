@@ -71,8 +71,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/projets">Projets</a>
                     </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link" href="/jumelage">Jumelage</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="">Jumelage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
