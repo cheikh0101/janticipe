@@ -12,14 +12,16 @@ class jumelageLgi2Mail extends Mailable
     use Queueable, SerializesModels;
 
     public $details;
+    public $details1;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct($details, $details1)
     {
         $this->details = $details;
+        $this->details1 = $details1;
     }
 
     /**

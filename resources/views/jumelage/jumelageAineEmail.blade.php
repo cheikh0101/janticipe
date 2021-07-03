@@ -780,10 +780,10 @@
                                                                                                 align="left">
                                                                                                 <p>
                                                                                                     Bonjour M/Mme
-                                                                                                    <u>{{$details['nom']}}</u>,
+                                                                                                    <u>{{$details1['nom']}}</u>,
                                                                                                     N°
                                                                                                     tel:
-                                                                                                    <u>{{$details['num_telephone']}}</u>.
+                                                                                                    <u>{{$details1['num_telephone']}}</u>.
                                                                                                     Suite
                                                                                                     à votre
                                                                                                     inscription
@@ -792,28 +792,30 @@
                                                                                                     pour l'année
                                                                                                     universitaire
                                                                                                     2020-2021 voilà les
-                                                                                                    infos concernant un
-                                                                                                    de vos jumeaux.
+                                                                                                    infos concernant
+                                                                                                    un(e)
+                                                                                                    de vos
+                                                                                                    jumeaux(jumelles).
                                                                                                 </p>
                                                                                                 <p>
 
                                                                                                     <ul>
                                                                                                         <li>
                                                                                                             Nom:
-                                                                                                            xxx
+                                                                                                            {{$details['nom']}}
                                                                                                         </li>
                                                                                                         <li>
                                                                                                             Prénom:
-                                                                                                            xxx
+                                                                                                            {{$details['prenom']}}
                                                                                                         </li>
                                                                                                         <li>
                                                                                                             Adresse
                                                                                                             mail:
-                                                                                                            xxx
+                                                                                                            {{$details['adresse_mail']}}
                                                                                                         </li>
                                                                                                         <li>
                                                                                                             N°
-                                                                                                            Tel:xxx
+                                                                                                            Tel:{{$details['num_telephone']}}
                                                                                                         </li>
                                                                                                     </ul>
                                                                                                 </p>

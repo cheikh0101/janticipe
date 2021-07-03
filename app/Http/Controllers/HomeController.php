@@ -62,20 +62,26 @@ class HomeController extends Controller
             echo $key . ': <br />';
 
             foreach ($value as $valeur) {
-                echo $valeur . ': <br />';
+                echo $valeur->prenom . ': <br />';
                 echo "sortir de la boucle <br/>";
                 break;
             }
             echo '<br />';
-        }
-        dd($jumelage);*/
+        }*/
+        $i = 0;
         foreach ($jumelage[1] as $key) {
-            $details = [
+            $details1 = [
                 'nom' => $key->nom,
                 'num_telephone' => $key->num_telephone
             ];
-            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details));
+            $details = array_values($jumelage[0])[$i];
+            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
+            $i++;
         }
+        /*for ($i = 0; $i < $nbreCadet; $i++) {
+            echo array_values($jumelage[0])[$i];
+        }
+        dd(array_values($jumelage[0])[0]);*/
         return view('jumelage/result', compact(
             'jumelage'
         ));
