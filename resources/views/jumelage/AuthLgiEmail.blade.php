@@ -810,7 +810,7 @@
                                                                                                     en ligne sur la
                                                                                                     plateforme Janticipe
                                                                                                     <a
-                                                                                                        href="https://janticipe.herokuapp.com/">
+                                                                                                        href="https://janticipe.herokuapp.com/jumelage">
                                                                                                         (janticipe.herokuapp.com)</a>.
                                                                                                     En cas d'erreur sur
                                                                                                     vos informations
