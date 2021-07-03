@@ -2,7 +2,7 @@
 @section('content')
 <div class="container col-xxl-8 px-4 py-0">
     @isset($message)
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <div class="alert alert-primary alert-dismissible fade show d-none" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             <span class="sr-only">Close</span>
@@ -142,7 +142,7 @@
     </div>
 </div>
 <script>
-    const Modal = document.querySelector('.offcanvas');
+    /*  const Modal = document.querySelector('.offcanvas');
 Modal.style.display = "none";
 const boutonTrigger = document.querySelector('.btne');
 boutonTrigger.style.display = "none";
@@ -157,6 +157,6 @@ function myfunc() {
         Modal.style.display = "block";
 
     }
-}
+}*/
 </script>
 @endsection
