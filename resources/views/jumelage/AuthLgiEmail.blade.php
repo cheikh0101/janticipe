@@ -793,11 +793,16 @@
                                                                                                     rapidement possible.
                                                                                                 </p>
                                                                                                 <p>
-                                                                                                    Login:
-                                                                                                    {{$details['email']}}
-                                                                                                    <br>
-                                                                                                    Password:
-                                                                                                    {{$details['password']}}
+                                                                                                    <ul>
+                                                                                                        <li>
+                                                                                                            Login:
+                                                                                                            {{$details['email']}}
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            Password:
+                                                                                                            {{$details['password']}}
+                                                                                                        </li>
+                                                                                                    </ul>
                                                                                                 </p>
                                                                                                 <p>
                                                                                                     L'inscription se

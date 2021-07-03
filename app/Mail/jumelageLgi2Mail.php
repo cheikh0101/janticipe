@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class AuthMailLgi1 extends Mailable
+class jumelageLgi2Mail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -29,6 +29,6 @@ class AuthMailLgi1 extends Mailable
      */
     public function build()
     {
-        return $this->subject('Authentification pour le Jumelage 2020-2021')->view('jumelage.AuthLgiEmail');
+        return $this->subject('Résultat du Jumelage 2020-2021')->view('jumelage.jumelageAineEmail');
     }
 }

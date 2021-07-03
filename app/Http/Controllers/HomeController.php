@@ -7,6 +7,9 @@ use App\Models\Aine;
 use App\Models\authLgi1;
 use App\Models\AuthLgi2;
 use App\Models\Cadet;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\jumelageLgi2Mail;
+
 
 class HomeController extends Controller
 {
@@ -29,7 +32,7 @@ class HomeController extends Controller
     {
         for ($i = 1; $i < $max + 1; $i++) {
             $tab[$i] = rand(1, $max);
-            for ($j = 1; $j <= $i - 1; $j++) {
+            for ($j = 1; $j < $i; $j++) {
                 if ($tab[$i] == $tab[$j]) {
                     $i = $i - 1;
                 }
@@ -51,10 +54,28 @@ class HomeController extends Controller
                 $j++;
             }
             $jumelage[1][$i] = $tab[$i];
-            $tab2[$i] =  Cadet::findOrFail($this->my_rand($nbreCadet)[$i]);
-            $jumelage[0][$i] = $tab2[$i];
         }
+        foreach ($this->my_rand($nbreCadet) as $item) {
+            $jumelage[0][$item] =  Cadet::findOrFail($item);
+        }
+        /*foreach ($jumelage as $key => $value) {
+            echo $key . ': <br />';
 
+            foreach ($value as $valeur) {
+                echo $valeur . ': <br />';
+                echo "sortir de la boucle <br/>";
+                break;
+            }
+            echo '<br />';
+        }
+        dd($jumelage);*/
+        foreach ($jumelage[1] as $key) {
+            $details = [
+                'nom' => $key->nom,
+                'num_telephone' => $key->num_telephone
+            ];
+            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details));
+        }
         return view('jumelage/result', compact(
             'jumelage'
         ));

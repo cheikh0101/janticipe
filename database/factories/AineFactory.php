@@ -25,7 +25,7 @@ class AineFactory extends Factory
             'prenom' => $this->faker->name,
             'nom' => $this->faker->name,
             'adresse_mail' => $this->faker->unique()->safeEmail,
-            'num_telephone' => $this->faker->unique()->name,
+            'num_telephone' => $this->faker->unique()->phoneNumber(),
         ];
     }
 }
