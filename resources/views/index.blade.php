@@ -2,7 +2,7 @@
 @section('content')
 <div class="container col-xxl-8 px-4 py-0">
     @isset($message)
-    <div class="alert alert-primary alert-dismissible fade show d-none" role="alert">
+    <div class="alert alert-primary alert-dismissible fade show " role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             <span class="sr-only">Close</span>
@@ -136,7 +136,7 @@
         <p>
             Comme chaque année au niveau de la LI de l'UIDT un 🤩jumelage🤩 s'effectue entre la LI2 et la LI1.
             <br>
-            Restez à l'écoute bientot le démarage des 🤩Inscriptions🤩.
+            Restez à l'écoute bientot le démarrage des 🤩Inscriptions🤩.
         </p>
         <a href="" class="btn btn-primary">Bientot disponible</a>
     </div>

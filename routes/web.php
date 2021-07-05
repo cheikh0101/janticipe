@@ -20,7 +20,7 @@ use App\Http\Controllers\DompdfController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 //Route des cours
 Route::get('/cours/s1', function () {
     return view('cours/semestre1');
@@ -85,7 +85,7 @@ Route::post('/jumelage', function (Request $request) {
     $authLgi1 = authLgi1::whereEmail($request->email)->wherePassword($request->password)->first();
     $authLgi2 = AuthLgi2::whereEmail($request->email)->wherePassword($request->password)->first();
     if ($authLgi1 == null && $authLgi2 == null) {
-        return view('jumelage/login')->with(['message' => 'Adresse mail ou mot de passe incorrecte']);
+        return view('jumelage/login')->with(['message' => 'Adresse mail incorrecte, mot de passe incorrecte ou vous essayez de s\'inscrire plus d\'une fois ce qui est impossible']);
     } elseif ($authLgi1 != null && $authLgi2 == null) {
         //recuperation de tt les infos concernant l'utilisateur authentifie
         $id = authLgi1::where('email', '=', $request->email)->get();
@@ -117,3 +117,7 @@ Auth::routes();
 
 //pdf
 Route::get('/pdf-generate', 'App\Http\Controllers\DompdfController@generatePDF');
+
+Route::get('/pdf-generateAines', 'App\Http\Controllers\DompdfController@genereatePdfAines');
+
+Route::get('/pdf-generateCadet', 'App\Http\Controllers\DompdfController@genereatePdfCadet');

@@ -107,7 +107,17 @@
     </div>
     <div class="row mt-5">
         <div class="col">
-            <h5>Etudiants de la LGI 1</h5>
+            <div class="d-flex justify-content-between">
+                <span>
+                    <h5> Etudiants de la LGI 1</h5>
+                </span>
+                <span>
+                    <a href="pdf-generateCadet" class="btn btn-primary"> <i class="fa fa-download"
+                            aria-hidden="true"></i>
+                        Convertir en
+                        pdf </a>
+                </span>
+            </div>
             <table class="table">
                 <thead>
                     <tr>
@@ -116,7 +126,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
-                        <!--<th>Actions</th>-->
+                        <th colspan="2">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -127,7 +137,9 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
-                        <td class="d-none">
+                        <td><a href="" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                        </td>
+                        <td>
                             <form action=" {{route('cadet.destroy',$item)}} " method="post">
                                 @csrf
                                 @method('DELETE')
@@ -143,7 +155,17 @@
 
     <div class="row">
         <div class="col">
-            <h5>Etudiants de la LGI 2</h5>
+            <div class="d-flex justify-content-between">
+                <span>
+                    <h5> Etudiants de la LGI 2</h5>
+                </span>
+                <span>
+                    <a href="pdf-generateAines" class="btn btn-primary"> <i class="fa fa-download"
+                            aria-hidden="true"></i>
+                        Convertir en
+                        pdf </a>
+                </span>
+            </div>
             <table class="table">
                 <thead>
                     <tr>
@@ -152,6 +174,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
+                        <th colspan="2">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -162,6 +185,16 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
+                        <td><a href="" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                        </td>
+                        <td>
+                            <form action="" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger"> <i class="fa fa-remove"
+                                        aria-hidden="true"></i> </button>
+                            </form>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
@@ -171,8 +204,36 @@
 
     <div class="row">
         <div class="col">
-            <a href=" {{route('jumelage')}} " class="btn btn-primary">Je jumele en envoyant les mails et la creation
-                d'un pdf</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+                Je jumele en envoyant les mails et la creation
+                d'un pdf
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Etes vous sur de vouloir le faire ?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex justify-content-between">
+                                <span>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                                </span>
+                                <span>
+                                    <a href=" {{route('jumelage')}} " class="btn btn-primary">Oui</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

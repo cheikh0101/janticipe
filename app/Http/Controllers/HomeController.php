@@ -9,6 +9,8 @@ use App\Models\AuthLgi2;
 use App\Models\Cadet;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\jumelageLgi2Mail;
+use PDF;
+
 
 
 class HomeController extends Controller
@@ -94,6 +96,7 @@ class HomeController extends Controller
         $authLgi1 = authLgi1::all();
         $authLgi2 = AuthLgi2::all();
 
+        $pdf = PDF::loadView('jumelage.impressionAines', compact('aines'))->setPaper('a4', 'landscape')->download('jumelage.pdf');
 
         return view('home', compact(
             'cadets',

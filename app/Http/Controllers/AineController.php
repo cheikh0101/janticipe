@@ -51,7 +51,8 @@ class AineController extends Controller
         $cadet->save();
         $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
 
-        return view('index', compact('message'));
+        //return view('index', compact('message'));
+        return redirect()->route('index');
     }
 
     /**
