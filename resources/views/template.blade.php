@@ -72,7 +72,7 @@
                         <a class="nav-link" href="/projets">Projets</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="">Jumelage</a>
+                        <a class="nav-link" href="/jumelage">Jumelage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -112,6 +112,7 @@
 
     <!-- Page Content -->
     <div class="container">
+        @if(session('header') != true)
         <div class="row">
             <div class="col-md-8 mb-5">
                 <h2>A propos</h2>
@@ -146,6 +147,8 @@
             </div>
         </div>
         <!-- /.row -->
+        @endif
+
     </div>
 
     @yield('content')

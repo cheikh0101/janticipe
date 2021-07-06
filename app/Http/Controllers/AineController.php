@@ -35,6 +35,10 @@ class AineController extends Controller
      */
     public function store(Request $request)
     {
+        $mail = session('mail');
+        if ($mail != $request->input('adresse_mail')) {
+            return "impossible de s'inscrire plus d'1 fois";
+        }
         $request->validate(
             [
                 'prenom' => 'required',
@@ -52,7 +56,8 @@ class AineController extends Controller
         $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
 
         //return view('index', compact('message'));
-        return redirect()->route('index');
+        //return redirect()->route('index');
+        return "infos enregistree avec succes";
     }
 
     /**

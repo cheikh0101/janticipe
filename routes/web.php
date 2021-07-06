@@ -73,6 +73,11 @@ Route::get('/suggestions/s4', function () {
 //fin route suggestions
 
 Route::get('/projets', function () {
+    session(
+        [
+            "header" => true
+        ]
+    );
     return view('projets/projets');
 });
 
@@ -81,9 +86,9 @@ Route::get('/jumelage', function () {
 });
 
 Route::post('/jumelage', function (Request $request) {
-
     $authLgi1 = authLgi1::whereEmail($request->email)->wherePassword($request->password)->first();
     $authLgi2 = AuthLgi2::whereEmail($request->email)->wherePassword($request->password)->first();
+
     if ($authLgi1 == null && $authLgi2 == null) {
         return view('jumelage/login')->with(['message' => 'Adresse mail incorrecte, mot de passe incorrecte ou vous essayez de s\'inscrire plus d\'une fois ce qui est impossible']);
     } elseif ($authLgi1 != null && $authLgi2 == null) {
@@ -97,6 +102,10 @@ Route::post('/jumelage', function (Request $request) {
         $id = AuthLgi2::where('email', '=', $request->email)->get();
         AuthLgi2::destroy($id);
         $tmp = 2;
+        session([
+            'login' => true,
+            'mail' => $request->email
+        ]);
         return view('jumelage/jumelage', compact('tmp'));
     }
 })->name('jumelageLogin');

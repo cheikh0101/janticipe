@@ -32,6 +32,7 @@ class HomeController extends Controller
      */
     public function my_rand($max)
     {
+        $tab = [];
         for ($i = 1; $i < $max + 1; $i++) {
             $tab[$i] = rand(1, $max);
             for ($j = 1; $j < $i; $j++) {
@@ -57,6 +58,7 @@ class HomeController extends Controller
             }
             $jumelage[1][$i] = $tab[$i];
         }
+
         foreach ($this->my_rand($nbreCadet) as $item) {
             $jumelage[0][$item] =  Cadet::findOrFail($item);
         }
@@ -77,7 +79,7 @@ class HomeController extends Controller
                 'num_telephone' => $key->num_telephone
             ];
             $details = array_values($jumelage[0])[$i];
-            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
+            // Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
             $i++;
         }
         /*for ($i = 0; $i < $nbreCadet; $i++) {
