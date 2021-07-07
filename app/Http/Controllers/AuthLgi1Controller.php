@@ -52,7 +52,6 @@ class AuthLgi1Controller extends Controller
             'email' => $auth->email,
             'password' => $auth->password
         ];
-
         Mail::to($auth->email)->send(new AuthMailLgi1($details));
         return back();
     }
