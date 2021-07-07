@@ -35,12 +35,16 @@ class CadetController extends Controller
      */
     public function store(Request $request)
     {
+        $mail = session('mailCadet');
+        if ($mail != $request->input('adresse_mail')) {
+            return "mail d'authentification different du mail renseigné";
+        }
         $request->validate(
             [
                 'prenom' => 'required',
                 'nom' => 'required',
-                'num_telephone' => 'required',
-                'adresse_mail' => 'required',
+                'num_telephone' => 'required|unique:cadets,num_telephone|min:5',
+                'adresse_mail' => 'required|unique:cadets,adresse_mail',
             ]
         );
         $cadet = new Cadet();
@@ -49,8 +53,8 @@ class CadetController extends Controller
         $cadet->adresse_mail = $request->input('adresse_mail');
         $cadet->num_telephone = $request->input('num_telephone');
         $cadet->save();
-        $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
-        return view('index', compact('message'));
+
+        return view('jumelage/successInscription');
     }
 
     /**

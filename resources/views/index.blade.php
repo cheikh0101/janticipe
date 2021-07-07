@@ -1,17 +1,6 @@
 @extends('template')
 @section('content')
 <div class="container col-xxl-8 px-4 py-0">
-    @isset($message)
-    <div class="alert alert-primary alert-dismissible fade show " role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
-        </button>
-        <strong>
-            {{$message}}
-        </strong>
-    </div>
-    @endisset
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
             <img src="img/cours.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
@@ -123,9 +112,9 @@
     </div>
 </div>
 
+@if (session('jumelage') != true)
 <button class="btne btn-primary d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
     aria-controls="offcanvasTop">Toggle top offcanvas</button>
-
 <div class="offcanvas offcanvas-top bg-secondary text-white " tabindex="-1" id="offcanvasTop"
     aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header">
@@ -159,4 +148,5 @@ function myfunc() {
     }
 }
 </script>
+@endif
 @endsection

@@ -177,8 +177,6 @@
         </div>
     </div>
 </main>
-
-
 <button type="button" class="btnee btn-primary d-none" data-toggle="modal" data-target="#myModal">
     Open modal
 </button>

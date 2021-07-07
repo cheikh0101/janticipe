@@ -17,6 +17,10 @@
         th {
             border: 3px solid black;
         }
+
+        body {
+            margin-left: 100px
+        }
     </style>
 </head>
 

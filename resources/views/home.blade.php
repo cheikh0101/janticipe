@@ -109,7 +109,7 @@
         <div class="col">
             <div class="d-flex justify-content-between">
                 <span>
-                    <h5> Etudiants de la LGI 1</h5>
+                    <h5> Etudiants de la LGI 1 ({{$nbreCadet}}) </h5>
                 </span>
                 <span>
                     <a href="pdf-generateCadet" class="btn btn-primary"> <i class="fa fa-download"
@@ -157,7 +157,7 @@
         <div class="col">
             <div class="d-flex justify-content-between">
                 <span>
-                    <h5> Etudiants de la LGI 2</h5>
+                    <h5> Etudiants de la LGI 2 ({{$nbreAine}})</h5>
                 </span>
                 <span>
                     <a href="pdf-generateAines" class="btn btn-primary"> <i class="fa fa-download"
@@ -185,10 +185,11 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
-                        <td><a href="" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                        <td><a href=" {{route('aine.destroy',$item)}} " class="btn btn-primary"> <i class="fa fa-pencil"
+                                    aria-hidden="true"></i> </a>
                         </td>
                         <td>
-                            <form action="" method="post">
+                            <form action="{{route('aine.destroy',$item)}}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger"> <i class="fa fa-remove"

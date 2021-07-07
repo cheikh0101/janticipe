@@ -35,16 +35,16 @@ class AineController extends Controller
      */
     public function store(Request $request)
     {
-        $mail = session('mail');
+        $mail = session('mailAine');
         if ($mail != $request->input('adresse_mail')) {
-            return "impossible de s'inscrire plus d'1 fois";
+            return "mail d'authentification different du mail renseigné";
         }
         $request->validate(
             [
                 'prenom' => 'required',
                 'nom' => 'required',
-                'num_telephone' => 'required',
-                'adresse_mail' => 'required',
+                'num_telephone' => 'required|unique:aines,num_telephone|min:5',
+                'adresse_mail' => 'required|unique:aines,adresse_mail',
             ]
         );
         $cadet = new Aine();
@@ -53,11 +53,7 @@ class AineController extends Controller
         $cadet->adresse_mail = $request->input('adresse_mail');
         $cadet->num_telephone = $request->input('num_telephone');
         $cadet->save();
-        $message = "Formulaire remplis avec succès. Nous vous mettrons en relation avec votre jumeau ou jumelle d'ici peux via l'email renseigné .";
-
-        //return view('index', compact('message'));
-        //return redirect()->route('index');
-        return "infos enregistree avec succes";
+        return view('jumelage/successInscription');
     }
 
     /**
@@ -102,6 +98,7 @@ class AineController extends Controller
      */
     public function destroy(Aine $aine)
     {
-        //
+        Aine::destroy($aine->id);
+        return back();
     }
 }

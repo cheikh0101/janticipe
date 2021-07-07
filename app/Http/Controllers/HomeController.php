@@ -9,9 +9,6 @@ use App\Models\AuthLgi2;
 use App\Models\Cadet;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\jumelageLgi2Mail;
-use PDF;
-
-
 
 class HomeController extends Controller
 {
@@ -45,9 +42,13 @@ class HomeController extends Controller
     }
     public function jumelage()
     {
+        $jumelage = [];
         //on compte les etudiants inscris en lgi1 et lgi2
         $nbreCadet = Cadet::count();
         $nbreAine = Aine::count();
+        foreach ($this->my_rand($nbreCadet) as $item) {
+            $jumelage[0][$item] =  Cadet::findOrFail($item);
+        }
         $j = 1;
         for ($i = 1; $i < $nbreCadet + 1; $i++) {
             $tab[$i] =  Aine::findOrFail($j);
@@ -58,20 +59,10 @@ class HomeController extends Controller
             }
             $jumelage[1][$i] = $tab[$i];
         }
-
-        foreach ($this->my_rand($nbreCadet) as $item) {
-            $jumelage[0][$item] =  Cadet::findOrFail($item);
+        if ($jumelage  == null || $nbreAine > $nbreCadet) {
+            return back();
         }
-        /*foreach ($jumelage as $key => $value) {
-            echo $key . ': <br />';
-
-            foreach ($value as $valeur) {
-                echo $valeur->prenom . ': <br />';
-                echo "sortir de la boucle <br/>";
-                break;
-            }
-            echo '<br />';
-        }*/
+        //envoie de mail
         $i = 0;
         foreach ($jumelage[1] as $key) {
             $details1 = [
@@ -79,32 +70,33 @@ class HomeController extends Controller
                 'num_telephone' => $key->num_telephone
             ];
             $details = array_values($jumelage[0])[$i];
-            // Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
+            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
             $i++;
         }
-        /*for ($i = 0; $i < $nbreCadet; $i++) {
-            echo array_values($jumelage[0])[$i];
+        if ($i == 0) {
+            return "aucun mail envoyé";
         }
-        dd(array_values($jumelage[0])[0]);*/
         return view('jumelage/result', compact(
-            'jumelage'
+            'jumelage',
         ));
     }
     public function index()
     {
-        //on affiche les 4 derniers elements en utilisant la pagination
+        //on compte les etudiants inscris en lgi1 et lgi2
+        $nbreCadet = Cadet::count();
+        $nbreAine = Aine::count();
         $cadets = Cadet::all();
         $aines = Aine::all();
         $authLgi1 = authLgi1::all();
         $authLgi2 = AuthLgi2::all();
-
-        $pdf = PDF::loadView('jumelage.impressionAines', compact('aines'))->setPaper('a4', 'landscape')->download('jumelage.pdf');
 
         return view('home', compact(
             'cadets',
             'aines',
             'authLgi1',
             'authLgi2',
+            'nbreCadet',
+            'nbreAine'
         ));
     }
 }

@@ -32,19 +32,20 @@
         <div class="row border-bottom">
             <div class="col">
                 <table class="table">
+                    <caption>LGI 1</caption>
                     <thead>
                         <tr>
-                            <th>#id</th>
                             <th>Prénom</th>
                             <th>Nom</th>
+                            <th>N° Téléphone</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($jumelage[0] as $item)
                         <tr>
-                            <td>{{$item->id}}</td>
                             <td>{{$item->prenom}}</td>
                             <td>{{$item->nom}}</td>
+                            <td>{{$item->num_telephone}}</td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -52,21 +53,20 @@
             </div>
             <div class="col">
                 <table class="table">
+                    <caption>LGI 2</caption>
                     <thead>
                         <tr>
-                            <th>#id</th>
                             <th>Prénom</th>
                             <th>Nom</th>
+                            <th>N° Téléphone</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($jumelage[1] as $item)
                         <tr>
-                            <td>
-                                {{$item->id}}
-                            </td>
                             <td>{{$item->prenom}}</td>
                             <td>{{$item->nom}}</td>
+                            <td>{{$item->num_telephone}}</td>
                         </tr>
                         @endforeach
                     </tbody>

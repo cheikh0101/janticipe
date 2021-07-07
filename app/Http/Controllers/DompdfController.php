@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Aine;
 use App\Models\Cadet;
-use Illuminate\Http\Request;
 use PDF;
 
 class DompdfController extends Controller
@@ -36,7 +35,7 @@ class DompdfController extends Controller
 
         $pdf = PDF::loadView('jumelage.impressionAines', compact('aines'))->setPaper('a4', 'landscape');
 
-        return $pdf->download('aine.pdf');
+        return $pdf->download('aines.pdf');
     }
 
     public function genereatePdfCadet()
@@ -45,6 +44,6 @@ class DompdfController extends Controller
 
         $pdf = PDF::loadView('jumelage.impressionCadet', compact('cadets'))->setPaper('a4', 'landscape');
 
-        return $pdf->download('cadet.pdf');
+        return $pdf->download('cadets.pdf');
     }
 }

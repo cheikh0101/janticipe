@@ -82,6 +82,11 @@ Route::get('/projets', function () {
 });
 
 Route::get('/jumelage', function () {
+    session(
+        [
+            "jumelage" => true
+        ]
+    );
     return view('jumelage/login');
 });
 
@@ -97,16 +102,20 @@ Route::post('/jumelage', function (Request $request) {
         //supprimer les infos dans la bdd
         authLgi1::destroy($id);
         $tmp = 1;
-        return view('jumelage/jumelage', compact('tmp'));
+        session([
+            'login' => true,
+            'mailCadet' => $request->email
+        ]);
+        return view('jumelage/indexJumelage', compact('tmp'));
     } else {
         $id = AuthLgi2::where('email', '=', $request->email)->get();
         AuthLgi2::destroy($id);
         $tmp = 2;
         session([
             'login' => true,
-            'mail' => $request->email
+            'mailAine' => $request->email
         ]);
-        return view('jumelage/jumelage', compact('tmp'));
+        return view('jumelage/indexJumelage', compact('tmp'));
     }
 })->name('jumelageLogin');
 

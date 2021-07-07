@@ -17,13 +17,16 @@
         th {
             border: 3px solid black;
         }
+
+        body {
+            margin-left: 100px
+        }
     </style>
 </head>
 
 <body>
     <table>
-        <caption>Liste des étudiants de la LI1 inscris au programme de jumelage</caption>
-        <br>
+        <caption>Liste des étudiants de la LI1 inscris au programme de Jumelage 2020-2021</caption>
         <thead>
             <tr>
                 <th colspan="5">
@@ -50,7 +53,6 @@
             @endforeach
         </tbody>
     </table>
-
 </body>
 
 </html>
