@@ -42,7 +42,6 @@ class HomeController extends Controller
     }
     public function jumelage()
     {
-        return "hello";
         $jumelage = [];
         //on compte les etudiants inscris en lgi1 et lgi2
         $nbreCadet = Cadet::count();
