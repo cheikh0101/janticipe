@@ -73,7 +73,7 @@ class HomeController extends Controller
                 'num_telephone' => $key->num_telephone
             ];
             $details = array_values($jumelage[0])[$i];
-            //Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
+            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
             $i++;
         }
         if ($i == 0) {
