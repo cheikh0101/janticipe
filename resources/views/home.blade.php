@@ -126,6 +126,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
+                        <th>Résidence</th>
                         <th colspan="2">Actions</th>
                     </tr>
                 </thead>
@@ -137,7 +138,11 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
-                        <td><a href="" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                        <td>
+                            {{$item->residence}}
+                        </td>
+                        <td><a href="{{route('cadet.edit',$item)}}" class="btn btn-primary"> <i class="fa fa-pencil"
+                                    aria-hidden="true"></i> </a>
                         </td>
                         <td>
                             <form action=" {{route('cadet.destroy',$item)}} " method="post">
@@ -152,7 +157,6 @@
             </table>
         </div>
     </div>
-
     <div class="row">
         <div class="col">
             <div class="d-flex justify-content-between">
@@ -174,6 +178,7 @@
                         <th>Nom</th>
                         <th>Adresse Mail</th>
                         <th>Numéro Téléphone</th>
+                        <th>Résidence</th>
                         <th colspan="2">Actions</th>
                     </tr>
                 </thead>
@@ -185,7 +190,10 @@
                         <td>{{$item->nom}}</td>
                         <td>{{$item->adresse_mail}}</td>
                         <td>{{$item->num_telephone}}</td>
-                        <td><a href=" {{route('aine.destroy',$item)}} " class="btn btn-primary"> <i class="fa fa-pencil"
+                        <td>
+                            {{$item->residence}}
+                        </td>
+                        <td><a href=" {{route('aine.edit',$item)}} " class="btn btn-primary"> <i class="fa fa-pencil"
                                     aria-hidden="true"></i> </a>
                         </td>
                         <td>
@@ -202,39 +210,11 @@
             </table>
         </div>
     </div>
-
     <div class="row">
         <div class="col">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-                Je jumele en envoyant les mails et la creation
-                d'un pdf
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Etes vous sur de vouloir le faire ?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="d-flex justify-content-between">
-                                <span>
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
-                                </span>
-                                <span>
-                                    <a href=" {{route('jumelage')}} " class="btn btn-primary">Oui</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href=" {{route('choixJumelage')}} " class="btn btn-primary btn-lg">
+                Exécuter le programme de jumelage
+            </a>
         </div>
     </div>
 </div>

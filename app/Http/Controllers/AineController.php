@@ -52,6 +52,7 @@ class AineController extends Controller
         $cadet->nom = $request->input('nom');
         $cadet->adresse_mail = $request->input('adresse_mail');
         $cadet->num_telephone = $request->input('num_telephone');
+        $cadet->residence = $request->input('residence');
         $cadet->save();
         return view('jumelage/successInscription');
     }
@@ -75,7 +76,7 @@ class AineController extends Controller
      */
     public function edit(Aine $aine)
     {
-        //
+        return view('jumelage.aine.edit', compact('aine'));
     }
 
     /**
@@ -87,7 +88,17 @@ class AineController extends Controller
      */
     public function update(Request $request, Aine $aine)
     {
-        //
+        $request->validate(
+            [
+                'prenom' => 'required',
+                'nom' => 'required',
+                'num_telephone' => 'required',
+                'adresse_mail' => 'required',
+                'residence' => 'required'
+            ]
+        );
+        $aine->update($request->all());
+        return redirect()->route('home');
     }
 
     /**

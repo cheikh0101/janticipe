@@ -19,6 +19,7 @@ class CreateCadetsTable extends Migration
             $table->string('nom');
             $table->string('adresse_mail')->unique();
             $table->string('num_telephone')->unique();
+            $table->string('residence');
             $table->timestamps();
         });
     }

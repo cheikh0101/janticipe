@@ -106,7 +106,8 @@ Route::post('/jumelage', function (Request $request) {
             'login' => true,
             'mailCadet' => $request->email
         ]);
-        return view('jumelage/indexJumelage', compact('tmp'));
+        $mail = session('mailCadet');
+        return view('jumelage/indexJumelage', compact('tmp', 'mail'));
     } else {
         $id = AuthLgi2::where('email', '=', $request->email)->get();
         AuthLgi2::destroy($id);
@@ -115,13 +116,12 @@ Route::post('/jumelage', function (Request $request) {
             'login' => true,
             'mailAine' => $request->email
         ]);
-        return view('jumelage/indexJumelage', compact('tmp'));
+        $mail = session('mailAine');
+        return view('jumelage/indexJumelage', compact('tmp', 'mail'));
     }
 })->name('jumelageLogin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/jumele', [App\Http\Controllers\HomeController::class, 'jumelage'])->name('jumelage');
 
 Route::resource('aine', 'App\Http\Controllers\AineController');
 
@@ -133,9 +133,16 @@ Route::resource('authlgi2', 'App\Http\Controllers\AuthLgi2Controller');
 
 Auth::routes();
 
+Route::get(
+    '/choixJumelage',
+    function () {
+        return view('jumelage.choixJumelage');
+    }
+)->name('choixJumelage');
+
+Route::get('/choixjumelage', 'App\Http\Controllers\HomeController@jumelage')->name('choixjumelage');
+
 //pdf
 Route::get('/pdf-generate', 'App\Http\Controllers\DompdfController@generatePDF');
 
 Route::get('/pdf-generateAines', 'App\Http\Controllers\DompdfController@genereatePdfAines');
-
-Route::get('/pdf-generateCadet', 'App\Http\Controllers\DompdfController@genereatePdfCadet');

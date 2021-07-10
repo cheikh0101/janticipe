@@ -46,6 +46,9 @@ class HomeController extends Controller
         //on compte les etudiants inscris en lgi1 et lgi2
         $nbreCadet = Cadet::count();
         $nbreAine = Aine::count();
+        if ($nbreAine > $nbreCadet) {
+            return back();
+        }
         foreach ($this->my_rand($nbreCadet) as $item) {
             $jumelage[0][$item] =  Cadet::findOrFail($item);
         }
@@ -59,7 +62,7 @@ class HomeController extends Controller
             }
             $jumelage[1][$i] = $tab[$i];
         }
-        if ($jumelage  == null || $nbreAine > $nbreCadet) {
+        if ($jumelage  == null) {
             return back();
         }
         //envoie de mail
@@ -70,7 +73,7 @@ class HomeController extends Controller
                 'num_telephone' => $key->num_telephone
             ];
             $details = array_values($jumelage[0])[$i];
-            Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
+            //Mail::to($key->adresse_mail)->send(new jumelageLgi2Mail($details, $details1));
             $i++;
         }
         if ($i == 0) {

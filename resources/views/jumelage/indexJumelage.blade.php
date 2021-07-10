@@ -112,10 +112,17 @@
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
                                         <input type="email" name="adresse_mail" required id="" class="form-control"
-                                            placeholder="" aria-describedby="helpId">
+                                            value=" {{$mail}} " aria-describedby="helpId">
                                         <small id="helpId" class="text-danger">*champ obligatoire</small>
                                     </div>
-
+                                    <div class="form-group mb-3">
+                                        <label for="residence">Résidence</label>
+                                        <select class="form-control" name="residence" id="residence">
+                                            <option value="hotel"> Hotel du rail ou aux alentours </option>
+                                            <option value="vcn"> Site VCN ou aux alentours </option>
+                                            <option value="autres"> Autres </option>
+                                        </select>
+                                    </div>
                                     <button type="submit" class="btn btn-primary">Envoyer</button>
                                 </form>
                             </div>
@@ -135,6 +142,7 @@
                             <div class="accordion-body">
                                 <form method="POST" action=" {{route('cadet.store')}} ">
                                     @csrf
+                                    @method('POST')
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Prénom</label>
                                         <input type="text" name="prenom" required id="" class="form-control"
@@ -159,10 +167,18 @@
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Adresse mail</label>
                                         <input type="email" name="adresse_mail" required id="" class="form-control"
-                                            placeholder="coumba@gmail.com" aria-describedby="helpId">
+                                            value=" {{$mail}} " aria-describedby="helpId">
                                         <small id="helpId" class="text-danger">*champ obligatoire</small>
                                     </div>
 
+                                    <div class="form-group mb-3">
+                                        <label for="residence">Résidence</label>
+                                        <select class="form-control" name="residence" id="residence">
+                                            <option value="hotel"> Hotel du rail ou aux alentours </option>
+                                            <option value="vcn"> Site VCN ou aux alentours </option>
+                                            <option value="autres"> Autres </option>
+                                        </select>
+                                    </div>
                                     <button type="submit" class="btn btn-primary">Envoyer</button>
                                 </form>
                             </div>

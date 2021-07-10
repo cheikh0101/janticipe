@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Aine extends Model
 {
     use HasFactory;
+    protected $guarded = [];
 }

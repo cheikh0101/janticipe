@@ -26,7 +26,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <h3 class="text-center"> <u> Jumelage entre la LI1 et la LI2 2020-2021 </u></h3>
+                <h3 class="text-center"> <u> Jumelage entre la LI1 et la LI2 2020-2021 (Aléatoire)</u></h3>
             </div>
         </div>
         <div class="row border-bottom">

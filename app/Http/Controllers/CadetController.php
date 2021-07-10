@@ -52,6 +52,7 @@ class CadetController extends Controller
         $cadet->nom = $request->input('nom');
         $cadet->adresse_mail = $request->input('adresse_mail');
         $cadet->num_telephone = $request->input('num_telephone');
+        $cadet->residence = $request->input('residence');
         $cadet->save();
 
         return view('jumelage/successInscription');
@@ -76,7 +77,7 @@ class CadetController extends Controller
      */
     public function edit(Cadet $cadet)
     {
-        //
+        return view('jumelage.cadet.edit', compact('cadet'));
     }
 
     /**
@@ -88,7 +89,17 @@ class CadetController extends Controller
      */
     public function update(Request $request, Cadet $cadet)
     {
-        //
+        $request->validate(
+            [
+                'prenom' => 'required',
+                'nom' => 'required',
+                'num_telephone' => 'required',
+                'adresse_mail' => 'required',
+                'residence' => 'required'
+            ]
+        );
+        $cadet->update($request->all());
+        return redirect()->route('home');
     }
 
     /**
