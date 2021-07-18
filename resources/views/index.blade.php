@@ -125,9 +125,9 @@
         <p>
             Comme chaque année au niveau de la LI de l'UIDT un 🤩jumelage🤩 s'effectue entre la LI2 et la LI1.
             <br>
-            Restez à l'écoute bientot le démarrage des 🤩Inscriptions🤩.
+            Si tu ne t'es pas encore inscris alors c'est le  🤩MOMENT🤩.
         </p>
-        <a href="" class="btn btn-primary">Bientot disponible</a>
+        <a href="/jumelage" class="btn btn-primary">Je m'inscris</a>
     </div>
 </div>
 <script>
