@@ -145,4 +145,6 @@ Route::get('/choixjumelage', 'App\Http\Controllers\HomeController@jumelage')->na
 //pdf
 Route::get('/pdf-generate', 'App\Http\Controllers\DompdfController@generatePDF');
 
+Route::get('/pdf-generateCadet', 'App\Http\Controllers\DompdfController@genereatePdfCadet');
+
 Route::get('/pdf-generateAines', 'App\Http\Controllers\DompdfController@genereatePdfAines');

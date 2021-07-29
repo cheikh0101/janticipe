@@ -29,7 +29,7 @@
         <caption>Liste des étudiants de la LI1 inscris au programme de Jumelage 2020-2021</caption>
         <thead>
             <tr>
-                <th colspan="5">
+                <th colspan="6">
                     <center> Licence Informatique 1 </center>
                 </th>
             </tr>
@@ -39,6 +39,7 @@
                 <th>NOM</th>
                 <th>N° téléphone</th>
                 <th>Adresse mail</th>
+                <th>Résidence</th>
             </tr>
         </thead>
         <tbody>
@@ -49,6 +50,7 @@
                 <td>{{$item->nom}}</td>
                 <td>{{$item->num_telephone}}</td>
                 <td>{{$item->adresse_mail}}</td>
+                <td>{{$item->residence}}</td>
             </tr>
             @endforeach
         </tbody>
