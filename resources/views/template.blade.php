@@ -71,35 +71,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/projets">Projets</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/jumelage">Jumelage</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="En développement">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="En développement">
-                            Forum
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Corona -->
-    <header class="bg-danger py-5">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-12">
-                    <h1 class="display-4 text-dark mt-3"> <marquee behavior="" direction=""> COVID-19 est toujours là . Respectons les mesures barrières</marquee> </h1>
-                </div>
-            </div>
-        </div>
-    </header>
+  
     <!-- Header -->
     <header class="bg-primary py-5 mb-5">
         <div class="container h-100">
