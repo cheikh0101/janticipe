@@ -88,7 +88,7 @@
                         C'est en ce sens que ces documents ont été regroupés ici pour vous permettre d'avoir au moins un
                         aperçu.
                         <br>
-                        <i>Juk ça bamuy téel</i>
+                        <i>Juk ça bamuy téel.</i>
                     </p>
                 </div>
             </div>
