@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -69,13 +69,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projets">Projets</a>
+                        <a class="nav-link" href="#">A Propos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-  
+
     <!-- Header -->
     <header class="bg-primary py-5 mb-5">
         <div class="container h-100">
@@ -95,53 +95,12 @@
         </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-        @if(session('header') != true)
-        <div class="row">
-            <div class="col-md-8 mb-5">
-                <h2>A propos</h2>
-                <hr>
-                <p>
-                    <b>J'ANTICIPE </b>
-                    est une plateforme proposée par les étudiants de la licence 2 en Informatique promotion
-                    2018-2020 de
-                    l'Université Iba Der Thiam de Thies pour permettre aux étudiants de tous les niveaux (l1,l2,l3)
-                    d'accéder
-                    aux documents cibles de meme que
-                    des <b> Suggestions </b> .
-                </p>
-                <p>
-                    Ne s'arretant pas là nous les offrons aussi un <b>forum</b> de discussion à but pédagogique dans
-                    lequel ils
-                    pourront échanger avec leurs ainés voir
-                    meme entre eux sur les différents problèmes qu'ils rencontrent.
-                </p>
-            </div>
-            <div class="col-md-4 mb-5">
-                <h2>Offert par</h2>
-                <hr>
-                <address>
-                    <strong>
-                        Licence Informatique 2 de l'UIDT
-                        <br>
-                        Promotion : 2018-2019
-                    </strong>
-                    <br>
-                </address>
-            </div>
-        </div>
-        <!-- /.row -->
-        @endif
-
-    </div>
-
     @yield('content')
 
     <!-- Footer -->
-    <footer class="py-1 bg-dark fixed-bottom">
+    <footer class="mt-auto py-1 bg-dark fixed-bottom">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; LI -- Promo 2018-2019 </p>
+            <p class="m-0 text-center text-white">&copy;Copyright {{ date('Y') }} - {{ config('app.name') }} </p>
         </div>
         <!-- /.container -->
     </footer>

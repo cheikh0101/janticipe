@@ -72,13 +72,4 @@ Route::get('/suggestions/s4', function () {
 });
 //fin route suggestions
 
-Route::get('/projets', function () {
-    session(
-        [
-            "header" => true
-        ]
-    );
-    return view('projets/projets');
-});
-
 Auth::routes();
