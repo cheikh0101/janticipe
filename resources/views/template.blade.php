@@ -56,21 +56,6 @@
                             <li><a class="dropdown-item" href="/td/s4">Semestre 4</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Suggestions
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/suggestions/s1">Semestre 1</a></li>
-                            <li><a class="dropdown-item" href="/suggestions/s2">Semestre 2</a></li>
-                            <li><a class="dropdown-item" href="/suggestions/s3">Semestre 3</a></li>
-                            <li><a class="dropdown-item" href="/suggestions/s4">Semestre 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">A Propos</a>
-                    </li>
                 </ul>
             </div>
         </div>

@@ -56,20 +56,4 @@ Route::get('/td/s4', function () {
     return view('td/semestre4');
 });
 //fin route td
-
-//Route des suggestions
-Route::get('/suggestions/s1', function () {
-    return view('suggestions/semestre1');
-});
-Route::get('/suggestions/s2', function () {
-    return view('suggestions/semestre2');
-});
-Route::get('/suggestions/s3', function () {
-    return view('suggestions/semestre3');
-});
-Route::get('/suggestions/s4', function () {
-    return view('suggestions/semestre4');
-});
-//fin route suggestions
-
 Auth::routes();

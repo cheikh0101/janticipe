@@ -9,19 +9,17 @@
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Cours</h1>
                 <p class="lead">
-                    <b>{{ config('app.name') }}</b> est une plateforme regroupant tous les Cours Magistraux,les TD/TP, les
-                    projets et
+                    <b>{{ config('app.name') }}</b> est une plateforme regroupant tous les cours magistraux et
                     bien
                     d'autres surprises
                     dans le but d'aider les étudiants de la Licence Informatique de l'UIDT de mieux appréhender l'année
-                    universitaire en anticipant
-                    sur les cours afin d'avoir des résultats meilleurs.
+                    universitaire.
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <div class="btn-group">
                         <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Tous les cours
+                            Découvrir
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/cours/s1">Semestre 1</a></li>
@@ -43,11 +41,9 @@
             <div class="col-10 col-sm-8 col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">TD/TP/EXAMENS</h1>
                 <p class="lead"><b>{{ config('app.name') }}</b>, plateforme regroupant un bon nombre des
-                    TD/TP,et bien
-                    d'autres surprises
+                    TD/TP
                     dans le but d'aider les étudiants de la Licence Informatique de l'UIDT de mieux appréhender l'année
-                    universitaire en anticipant
-                    sur les cours afin d'avoir des résultats meilleurs.</p>
+                    universitaire afin d'avoir des résultats meilleurs.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <div class="btn-group">
                         <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"

@@ -14,8 +14,8 @@
                         Programmation Orientée Objet 2
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursProgrammation">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
             <div class="feature col-md-4">
@@ -29,8 +29,8 @@
                         logiciels
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique2">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
             <div class="feature col-md-4">
@@ -43,8 +43,8 @@
                         Programmation fonctionnelle
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique2">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
         </div>
@@ -64,8 +64,8 @@
                         Signaux et systèmes analogiques
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursProgrammation">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
             <div class="feature col-md-4">
@@ -78,8 +78,8 @@
                         Introduction à l’IoT
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique2">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
             <div class="feature col-md-4">
@@ -92,8 +92,8 @@
                         Sécurité des réseaux
                     </li>
                 </ul>
-                <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#coursInformatique2">
-                    Découvrir
+                <a href="#" class="icon-link">
+                    Non disponible
                 </a>
             </div>
         </div>
