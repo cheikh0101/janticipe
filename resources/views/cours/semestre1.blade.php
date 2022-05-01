@@ -56,8 +56,7 @@
     </div>
 
     <!-- Modal Physique -->
-    <div class="modal fade" id="coursPhysique" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="coursPhysique" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -119,8 +118,7 @@
     <!--fin modal-->
 
     <!-- Modal Informatique-->
-    <div class="modal fade" id="coursInformatique" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="coursInformatique" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">

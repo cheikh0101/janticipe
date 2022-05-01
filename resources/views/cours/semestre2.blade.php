@@ -50,8 +50,8 @@
     </div>
 
     <!-- Modal Mathematiques-->
-    <div class="modal fade" id="coursMathematiques2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="coursMathematiques2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -64,33 +64,33 @@
                             Analyse 2
                             <ul>
                                 <li>
-                                    <a href="img/l1/maths/ensemble et relation binaire.pdf">Ensemble et Relation
+                                    <a href="../img/l1/maths/ensemble et relation binaire.pdf">Ensemble et Relation
                                         Binaire</a>
                                 </li>
 
                                 <li>
-                                    <a href="img/l1/maths/espace vectoriel.pdf">Espace Vectoriel</a>
+                                    <a href="../img/l1/maths/espace vectoriel.pdf">Espace Vectoriel</a>
                                 </li>
 
                                 <li>
-                                    <a href="img/l1/maths/Fonctions.pdf">Fonctions</a>
+                                    <a href="../img/l1/maths/Fonctions.pdf">Fonctions</a>
                                 </li>
                                 <li>
-                                    <a href="img/l1/maths/FormulesTrigonometrie.pdf">Formules
+                                    <a href="../img/l1/maths/FormulesTrigonometrie.pdf">Formules
                                         Trigonometriques</a>
                                 </li>
                                 <li>
-                                    <a href="img/l1/maths/Intégration.pdf">Intégration</a>
+                                    <a href="../img/l1/maths/Intégration.pdf">Intégration</a>
                                 </li>
                                 <li>
-                                    <a href="img/l1/maths/logique et raisonnement.pdf">Logique et
+                                    <a href="../img/l1/maths/logique et raisonnement.pdf">Logique et
                                         Raisonnement</a>
                                 </li>
                                 <li>
-                                    <a href="img/l1/maths/Matrice.pdf">Matrice</a>
+                                    <a href="../img/l1/maths/Matrice.pdf">Matrice</a>
                                 </li>
                                 <li>
-                                    <a href="img/l1/maths/Suite.pdf">Suite</a>
+                                    <a href="../img/l1/maths/Suite.pdf">Suite</a>
                                 </li>
                             </ul>
                         </li>
@@ -113,8 +113,8 @@
     <!--fin modal-->
 
     <!-- Modal Informatique-->
-    <div class="modal fade" id="coursInformatique2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="coursInformatique2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">

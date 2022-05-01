@@ -9,7 +9,8 @@
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Cours</h1>
                 <p class="lead">
-                    <b>J'Anticipe</b> est une plateforme regroupant tous les Cours Magistraux,les TD/TP, les projets et
+                    <b>{{ config('app.name') }}</b> est une plateforme regroupant tous les Cours Magistraux,les TD/TP, les
+                    projets et
                     bien
                     d'autres surprises
                     dans le but d'aider les étudiants de la Licence Informatique de l'UIDT de mieux appréhender l'année
@@ -41,7 +42,8 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">TD/TP/EXAMENS</h1>
-                <p class="lead"><b>J'Anticipe</b>, plateforme regroupant un bon nombre des TD/TP,et bien
+                <p class="lead"><b>{{ config('app.name') }}</b>, plateforme regroupant un bon nombre des
+                    TD/TP,et bien
                     d'autres surprises
                     dans le but d'aider les étudiants de la Licence Informatique de l'UIDT de mieux appréhender l'année
                     universitaire en anticipant
