@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ config('app.name') }}</title>
+    <title>{{ config('app.name') }} - Tous mes cours dans un même endroit</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -65,6 +65,12 @@
     <header class="bg-primary py-5 mb-5">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
+                <div class="col-lg-12 mt-2">
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        {{ config('app.name') }} souhaite une bonne rentrée universitaire à tous les nouveaux bacheliers 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
                 <div class="col-lg-12">
                     <h1 class="display-4 text-white mt-5 mb-2">{{ config('app.name') }}</h1>
                     <p class="lead mb-5 text-white-50">
@@ -103,6 +109,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>

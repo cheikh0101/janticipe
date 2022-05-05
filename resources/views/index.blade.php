@@ -3,8 +3,9 @@
     <div class="container col-xxl-8 px-4 py-0">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="img/online_school_SVG.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="200" loading="lazy">
+                {{-- <img src="img/online_school_SVG.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="200" loading="lazy"> --}}
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_0T1oLM.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Cours</h1>
@@ -60,8 +61,9 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="img/Books_SVG.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="200" loading="lazy">
+                {{-- <img src="img/Books_SVG.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="200" loading="lazy"> --}}
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_vzciom5h.json" speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
             </div>
         </div>
     </div>
