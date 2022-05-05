@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-lg-12">
                     <h1 class="display-4 text-white mt-5 mb-2">{{ config('app.name') }}</h1>
-                    <p class="lead mb-5 text-white-50">
+                    <p class="lead mb-5 text-white">
                         C'est bien beau de se divertir pendant les vacances mais n'empeche si vous avez la possibilité
                         d'anticiper vos cours mieux vaut en profiter.
                         C'est en ce sens que ces documents ont été regroupés ici pour vous permettre d'avoir au moins un
