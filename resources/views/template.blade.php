@@ -31,8 +31,8 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cours
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -45,8 +45,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             TD/TP
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -60,7 +60,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Header -->
     <header class="bg-primary py-5 mb-5">
         <div class="container h-100">
@@ -79,7 +78,6 @@
             </div>
         </div>
     </header>
-
     @yield('content')
 
     <!-- Footer -->

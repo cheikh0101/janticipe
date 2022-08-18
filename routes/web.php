@@ -19,6 +19,7 @@ use App\Http\Controllers\DompdfController;
 */
 
 Route::get('/', function () {
+    session()->flash('info', 'Janticipe V2.0, c\'est pour bientôt avec plein de nouveautés. Restez connectés!!!');
     return view('index');
 })->name('index');
 //Route des cours
